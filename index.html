@@ -1,0 +1,2188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100&family=Ubuntu:wght@500&display=swap');
+    </style>
+</head>
+
+<body class="body-content">
+<header>
+    <div>
+        <a href="index.html"><img src="img\logo.png" alt="logotipo"></a>
+    </div>
+    <div>
+        <ul class="navegacao">
+            <li><a href="assinatura.html"></a>Assinatura</li>
+            <li><a href="vagas.html"></a>Vagas</li>
+            <li><a href="login.gtml"></a>Login</li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <h1>Cadastre seu Currículo</h1>
+    <div class="lateral">
+        <ul>
+            <li>Dados Pessoais<input type="checkbox" name="dpcheck" id="dpcheck" class="checks"><label for="" class="checks"></label></li>
+            <li>Redes Sociais<input type="checkbox" name="rscheck" id="rscheck" class="checks"><label for="" class="checks"></label></li>
+            <li>Formação Acadêmica<input type="checkbox" name="facheck" id="facheck"><label for="" class="checks"></label></li>
+            <li>Experiências Profissionais<input type="checkbox" name="epcheck" id="epcheck"><label for="" class="checks"></label></li>
+            <li>Conhecimentos de Informática<input type="checkbox" name="cicheck" id="cicheck"><label for="" class="checks"></label></li>
+            <li>Habilidades<input type="checkbox" name="hcheck" id="hcheck"><label for="" class="checks"></label></li>
+            <li>Informações Complementares<input type="checkbox" name="iccheck" id="iccheck"><label for="" class="checks"></label></li>
+            <li>Objetivos Profissionais<input type="checkbox" name="opcheck" id="opcheck"><label for="" class="checks"></label></li>
+            <li>Recomendações<input type="checkbox" name="rcheck" id="rcheck"><label for="rcchack" class="checks"></label></li>
+        </ul>
+    </div>
+
+    <form method="post" action="base.html" class="formulario">
+        <input type="checkbox" name="caixinha" class="caixinha" id="checkdp">
+        <div class="trigger-wrapperdp">
+            <label for="checkdp"><p>Dados Pessoais</p></label>
+            <div class="divdp">
+                    <div class="ident">
+                        <input type="text" name="pri_nome" id="pnome" required placeholder="Primeiro Nome">
+                        <input type="text" name="sob_nome" id="snome" required placeholder="Sobrenome">
+                        <input type="text" name="cpf" id="cpf" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" placeholder="CPF"><!--https://gist.github.com/marcoscastro/7887900ceebe9e223dce-->
+                    </div>
+                    <div class="paisdt">
+                        <div>
+                            <label for="pais">País de Origem</label>
+                            <select name="pais" id="pais" required><!--https://www.codigofonte.com.br/codigos/lista-de-paises-->
+                            <option value="África do Sul">África do Sul</option>
+                            <option value="Albânia">Albânia</option>
+                            <option value="Alemanha">Alemanha</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antigua">Antigua</option>
+                            <option value="Arábia Saudita">Arábia Saudita</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armênia">Armênia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Austrália">Austrália</option>
+                            <option value="Áustria">Áustria</option>
+                            <option value="Azerbaijão">Azerbaijão</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrein">Bahrein</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Bélgica">Bélgica</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermudas">Bermudas</option>
+                            <option value="Botsuana">Botsuana</option>
+                            <option value="Brasil" selected="">Brasil</option>
+                            <option value="Brunei">Brunei</option>
+                            <option value="Bulgária">Bulgária</option>
+                            <option value="Burkina Fasso">Burkina Fasso</option>
+                            <option value="botão">botão</option>
+                            <option value="Cabo Verde">Cabo Verde</option>
+                            <option value="Camarões">Camarões</option>
+                            <option value="Camboja">Camboja</option>
+                            <option value="Canadá">Canadá</option>
+                            <option value="Cazaquistão">Cazaquistão</option>
+                            <option value="Chade">Chade</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Cidade do Vaticano">Cidade do Vaticano</option>
+                            <option value="Colômbia">Colômbia</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Coréia do Sul">Coréia do Sul</option>
+                            <option value="Costa do Marfim">Costa do Marfim</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Croácia">Croácia</option>
+                            <option value="Dinamarca">Dinamarca</option>
+                            <option value="Djibuti">Djibuti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="EUA">EUA</option>
+                            <option value="Egito">Egito</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Emirados Árabes">Emirados Árabes</option>
+                            <option value="Equador">Equador</option>
+                            <option value="Eritréia">Eritréia</option>
+                            <option value="Escócia">Escócia</option>
+                            <option value="Eslováquia">Eslováquia</option>
+                            <option value="Eslovênia">Eslovênia</option>
+                            <option value="Espanha">Espanha</option>
+                            <option value="Estônia">Estônia</option>
+                            <option value="Etiópia">Etiópia</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Filipinas">Filipinas</option>
+                            <option value="Finlândia">Finlândia</option>
+                            <option value="França">França</option>
+                            <option value="Gabão">Gabão</option>
+                            <option value="Gâmbia">Gâmbia</option>
+                            <option value="Gana">Gana</option>
+                            <option value="Geórgia">Geórgia</option>
+                            <option value="Gibraltar">Gibraltar</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Grécia">Grécia</option>
+                            <option value="Guadalupe">Guadalupe</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guiana">Guiana</option>
+                            <option value="Guiana Francesa">Guiana Francesa</option>
+                            <option value="Guiné-bissau">Guiné-bissau</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Holanda">Holanda</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="Hungria">Hungria</option>
+                            <option value="Iêmen">Iêmen</option>
+                            <option value="Ilhas Cayman">Ilhas Cayman</option>
+                            <option value="Ilhas Cook">Ilhas Cook</option>
+                            <option value="Ilhas Curaçao">Ilhas Curaçao</option>
+                            <option value="Ilhas Marshall">Ilhas Marshall</option>
+                            <option value="Ilhas Turks &amp; Caicos">Ilhas Turks &amp; Caicos</option>
+                            <option value="Ilhas Virgens (brit.)">Ilhas Virgens (brit.)</option>
+                            <option value="Ilhas Virgens(amer.)">Ilhas Virgens(amer.)</option>
+                            <option value="Ilhas Wallis e Futuna">Ilhas Wallis e Futuna</option>
+                            <option value="Índia">Índia</option>
+                            <option value="Indonésia">Indonésia</option>
+                            <option value="Inglaterra">Inglaterra</option>
+                            <option value="Irlanda">Irlanda</option>
+                            <option value="Islândia">Islândia</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Itália">Itália</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Japão">Japão</option>
+                            <option value="Jordânia">Jordânia</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Líbano">Líbano</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lituânia">Lituânia</option>
+                            <option value="Luxemburgo">Luxemburgo</option>
+                            <option value="Macau">Macau</option>
+                            <option value="Macedônia">Macedônia</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malásia">Malásia</option>
+                            <option value="Malaui">Malaui</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Marrocos">Marrocos</option>
+                            <option value="Martinica">Martinica</option>
+                            <option value="Mauritânia">Mauritânia</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="México">México</option>
+                            <option value="Moldova">Moldova</option>
+                            <option value="Mônaco">Mônaco</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Nicarágua">Nicarágua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigéria">Nigéria</option>
+                            <option value="Noruega">Noruega</option>
+                            <option value="Nova Caledônia">Nova Caledônia</option>
+                            <option value="Nova Zelândia">Nova Zelândia</option>
+                            <option value="Omã">Omã</option>
+                            <option value="Palau">Palau</option>
+                            <option value="Panamá">Panamá</option>
+                            <option value="Papua-nova Guiné">Papua-nova Guiné</option>
+                            <option value="Paquistão">Paquistão</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Polinésia Francesa">Polinésia Francesa</option>
+                            <option value="Polônia">Polônia</option>
+                            <option value="Porto Rico">Porto Rico</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Quênia">Quênia</option>
+                            <option value="Rep. Dominicana">Rep. Dominicana</option>
+                            <option value="Rep. Tcheca">Rep. Tcheca</option>
+                            <option value="Reunion">Reunion</option>
+                            <option value="Romênia">Romênia</option>
+                            <option value="Ruanda">Ruanda</option>
+                            <option value="Rússia">Rússia</option>
+                            <option value="Saipan">Saipan</option>
+                            <option value="Samoa Americana">Samoa Americana</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Serra Leone">Serra Leone</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Singapura">Singapura</option>
+                            <option value="Síria">Síria</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="St. Kitts &amp; Nevis">St. Kitts &amp; Nevis</option>
+                            <option value="St. Lúcia">St. Lúcia</option>
+                            <option value="St. Vincent">St. Vincent</option>
+                            <option value="Sudão">Sudão</option>
+                            <option value="Suécia">Suécia</option>
+                            <option value="Suiça">Suiça</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Tailândia">Tailândia</option>
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="Tanzânia">Tanzânia</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Trinidad &amp; Tobago">Trinidad &amp; Tobago</option>
+                            <option value="Tunísia">Tunísia</option>
+                            <option value="Turquia">Turquia</option>
+                            <option value="Ucrânia">Ucrânia</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="Uruguai">Uruguai</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Vietnã">Vietnã</option>
+                            <option value="Zaire">Zaire</option>
+                            <option value="Zâmbia">Zâmbia</option>
+                            <option value="Zimbábue">Zimbábue</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="datanasc">Data de Nascimento</label>
+                            <input type="date" name="datansc" id="datanasc" required>
+                        </div>
+                    </div>
+                    <div class="tel"> 
+                        <input type="tel" name="telefone" id="telefone" required placeholder="Telefone">
+                        <div class="wpp"> 
+                            <p>Receber mensagens por WhatsApp</p>
+                            <label for="sim">Sim</label>
+                            <input type="radio" name="wpp" id="sim" value="s" required>
+                            <label for="nao">Não</label>
+                            <input type="radio" name="wpp" id="nao" value="n" required>
+                        </div> 
+                        <div class="est_civ">
+                            <div>
+                                <label for="masculino">Masculino</label>
+                                <input type="radio" name="sexo" id="masculino" value="m" required>
+                                <label for="feminino">Feminino</label>
+                                <input type="radio" name="sexo" id="feminino" value="f" required>
+                            </div>
+                            <div>
+                                <label for="est_civ">Estado Civil</label>
+                                <select name="est_civ" id="est_civ" aria-placeholder="Estado Civil" required>
+                                <option value="solteiro">Solteiro</option>
+                                <option value="sasado">Casado</option>
+                                <option value="divorciado">Divorciado</option>
+                                <option value="separado">Separado</option>
+                                <option value="viuvo">Viúvo</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="endereco">
+                        <input type="text" name="cep" id="cep" placeholder="CEP" required pattern="(\d{2}\.?\d{3}\-?\d{3})">
+                        <input type="text" name="estado" id="estado" placeholder="Estado" required>
+                        <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
+                        <input type="text" name="bairro" id="bairro" 
+                        placeholder="Bairro">
+                        <input type="text" name="endereco" id="endereco"
+                        placeholder="Endereço" required>
+                        <input type="text" name="complemento" id="complemento" placeholder="Complemento">  
+                    </div>
+                    <div class="foto">
+                        <p>Foto de Perfil</p>
+                        <input type="file"  accept="image/*" />
+                    </div>
+                    <div class="pcd">
+                        <label for="pcd"> <p>Pessoa com deficiência</p></label>
+                        <input type="checkbox" name="pcd" id="pcd"> 
+                        <div class="pcdlist">
+                            <div>
+                            <label for="aud" class="pcdcheck">Auditiva</label>
+                            <input type="checkbox" name="aud" id="aud">
+                            <label for="fis" class="pcdcheck">Física</label>
+                            <input type="checkbox" name="fis" id="fis">
+                            <label for="vis" class="pcdcheck">Visual</label>
+                            <input type="checkbox" name="vis" id="vis">
+                            <label for="rea" class="pcdcheck">Reabilitados</label>
+                            <input type="checkbox" name="rea" id="rea">
+                            <label for="psi" class="pcdcheck">Psicossocial</label>
+                            <input type="checkbox" name="psi" id="psi">
+                            <label for="ment" class="pcdcheck">Mental</label>
+                            <input type="checkbox" name="ment" id="ment">
+                            <label for="fala" class="pcdcheck">Fala</label>
+                            <input type="checkbox" name="fala" id="fala">
+                        </div>
+                        <div>
+                            <textarea name="condicoes" id="condicoes" cols="80" rows="10" class="txt" placeholder="Descreva condições especiais de transporte, trabalho, acompanhamento, etc..."></textarea>
+                        </div>
+                        <div class="laud">
+                            Laudos de Deficiências
+                            <input type="file" name="laudo" id="laudo">
+                        </div>
+                    </div>
+                </div><!--????-->
+                <button type="submit"> <!--queria usar submit sem atualizar a pagina, ou somente checar os itens requird-->
+                <label for="dpcheck"><p>Feito</p></label>
+                </button>
+            </div>
+        </div>
+    </form> 
+
+    <form method="post" action="base.html" class="formulario">
+        <input type="checkbox" name="caixinha" class="caixinha" id="checkrs">
+        <div class="trigger-wrapperrs">
+            <label for="checkrs"><p>Redes Sociais</p></label>
+            <div class="divrs">
+            <label class="redes" for="linkedin">LinkedIn</label>
+            <input class="redes" type="text" name="linkedin" id="linkedin">
+            <label class="redes" for="facebook">Facebook</label>
+            <input class="redes" type="text" name="facebook" id="facebook">
+            <label class="redes" for="youtube">YouTube</label>
+            <input class="redes" type="text" name="youtube" id="youtube">
+            <label class="redes" for="instagram">Instagram</label>
+            <input class="redes" type="text" name="instagram" id="instagram">
+            <label class="redes" for="google">Google+</label>
+            <input class="redes" type="text" name="google" id="google">
+            <button type="button">
+                <label for="rscheck"><p>Feito</p></label>
+            </button>
+        </div>
+        </div><!---wtf q div é essa?-->
+    </form>
+
+    <form action="base.html" method="post" class="formulario">
+        <input type="checkbox" name="caixinha" class="caixinha" id="checkfa">
+        <div class="trigger-wrapperfa">
+            <label for="checkfa"><p>Formação Acadêmica</p></label>
+            <div class="divfa">
+                <div>
+                    <input type="text" name="instit" id="instit" placeholder="Instituição">
+                    <select name="pais" id="pais">
+                        <option value="">País onde estudou</option>
+                        <option value="124">Afeganistão</option>
+                        <option value="56">África do Sul</option>
+                        <option value="15">Albânia</option>
+                        <option value="27">Alemanha</option>
+                        <option value="32">Andorra</option>
+                        <option value="63">Angola</option>
+                        <option value="70">Antígua e Barbuda</option>
+                        <option value="125">Arábia Saudita</option>
+                        <option value="126">Argélia</option>
+                        <option value="4">Argentina</option>
+                        <option value="5">Armênia</option>
+                        <option value="6">Austrália</option>
+                        <option value="7">Áustria</option>
+                        <option value="127">Azerbaijão</option>
+                        <option value="8">Bahamas</option>
+                        <option value="128">Bangladesh</option>
+                        <option value="88">Barbados</option>
+                        <option value="129">Barein</option>
+                        <option value="10">Belarus</option>
+                        <option value="9">Bélgica</option>
+                        <option value="111">Belize</option>
+                        <option value="130">Benin</option>
+                        <option value="106">Bolívia</option>
+                        <option value="11">Bósnia Herzegovina</option>
+                        <option value="201">Botswana</option>
+                        <option selected="selected" value="12">Brasil</option>
+                        <option value="131">Brunei</option>
+                        <option value="13">Bulgária</option>
+                        <option value="132">Burkina Faso</option>
+                        <option value="133">Burundi</option>
+                        <option value="134">Butão</option>
+                        <option value="82">Cabo verde</option>
+                        <option value="14">Camarões</option>
+                        <option value="135">Camboja</option>
+                        <option value="1">Canadá</option>
+                        <option value="109">Caribe</option>
+                        <option value="136">Catar</option>
+                        <option value="36">Cazaquistão</option>
+                        <option value="137">Chade</option>
+                        <option value="107">Chile</option>
+                        <option value="121">China</option>
+                        <option value="18">Chipre</option>
+                        <option value="93">Colômbia</option>
+                        <option value="138">Comores</option>
+                        <option value="92">Congo</option>
+                        <option value="139">Coreia do Norte</option>
+                        <option value="123">Coreia do Sul</option>
+                        <option value="140">Costa do Marfim</option>
+                        <option value="78">Costa Rica</option>
+                        <option value="16">Croácia</option>
+                        <option value="17">Cuba</option>
+                        <option value="20">Dinamarca</option>
+                        <option value="141">Djibuti</option>
+                        <option value="142">Dominica</option>
+                        <option value="22">Egito</option>
+                        <option value="110">El Salvador</option>
+                        <option value="143">Emirados Árabes Unidos</option>
+                        <option value="108">Equador</option>
+                        <option value="144">Eritreia</option>
+                        <option value="54">Eslováquia</option>
+                        <option value="55">Eslovênia</option>
+                        <option value="57">Espanha</option>
+                        <option value="3">Estados Unidos</option>
+                        <option value="24">Estônia</option>
+                        <option value="145">Etiópia</option>
+                        <option value="200">Federação dos Estados da Micronésia</option>
+                        <option value="146">Fiji</option>
+                        <option value="47">Filipinas</option>
+                        <option value="25">Finlândia</option>
+                        <option value="26">Francia</option>
+                        <option value="147">Gabão</option>
+                        <option value="77">Gâmbia</option>
+                        <option value="148">Gana</option>
+                        <option value="149">Geórgia</option>
+                        <option value="150">Granada</option>
+                        <option value="28">Grécia</option>
+                        <option value="105">Guatemala</option>
+                        <option value="112">Guiana</option>
+                        <option value="113">Guiana francesa</option>
+                        <option value="122">Guinea Equatorial</option>
+                        <option value="151">Guiné-Bissau</option>
+                        <option value="152">Haiti</option>
+                        <option value="44">Holanda</option>
+                        <option value="114">Honduras</option>
+                        <option value="29">Hungria</option>
+                        <option value="153">Iemen</option>
+                        <option value="75">Ilhas Marshall</option>
+                        <option value="91">Ilhas Salomão</option>
+                        <option value="72">Índia</option>
+                        <option value="154">Indonésia</option>
+                        <option value="155">Irã</option>
+                        <option value="156">Iraque</option>
+                        <option value="31">Irlanda</option>
+                        <option value="30">Islândia</option>
+                        <option value="2">Israel</option>
+                        <option value="33">Itália</option>
+                        <option value="34">Jamaica</option>
+                        <option value="35">Japão</option>
+                        <option value="73">Jordânia</option>
+                        <option value="157">Kiribati</option>
+                        <option value="158">Kuwait</option>
+                        <option value="71">Kyrgyzstan</option>
+                        <option value="94">Laos</option>
+                        <option value="37">Latvia</option>
+                        <option value="67">Líbano</option>
+                        <option value="74">Libéria</option>
+                        <option value="159">Líbia</option>
+                        <option value="160">Liechtenstein</option>
+                        <option value="38">Lituânia</option>
+                        <option value="39">Luxemburgo</option>
+                        <option value="102">Malásia</option>
+                        <option value="161">Malawi</option>
+                        <option value="162">Maldivas</option>
+                        <option value="40">Mali</option>
+                        <option value="41">Malta</option>
+                        <option value="120">Marrocos</option>
+                        <option value="163">Maurício</option>
+                        <option value="164">Mauritânia</option>
+                        <option value="42">México</option>
+                        <option value="165">Mianmar</option>
+                        <option value="166">Moçambique</option>
+                        <option value="43">Moldova</option>
+                        <option value="167">Mongólia</option>
+                        <option value="168">Montenegro</option>
+                        <option value="169">Namíbia</option>
+                        <option value="170">Nauru</option>
+                        <option value="171">Nepal</option>
+                        <option value="115">Nicarágua</option>
+                        <option value="172">Níger</option>
+                        <option value="45">Nigéria</option>
+                        <option value="46">Noruega</option>
+                        <option value="85">Nova Zelândia</option>
+                        <option value="173">Omã</option>
+                        <option value="87">Palau</option>
+                        <option value="69">Panamá</option>
+                        <option value="174">Papua Nova Guiné</option>
+                        <option value="175">Paquistão</option>
+                        <option value="116">Paraguai</option>
+                        <option value="83">Peru</option>
+                        <option value="48">Polônia</option>
+                        <option value="50">Porto Rico</option>
+                        <option value="49">Portugal</option>
+                        <option value="97">Principado de Mônaco</option>
+                        <option value="89">Quênia</option>
+                        <option value="176">Quirguistão</option>
+                        <option value="101">Reino Unido</option>
+                        <option value="177">República Centro Africana</option>
+                        <option value="19">República Checa</option>
+                        <option value="178">República Democrática do Congo</option>
+                        <option value="21">República Dominicana</option>
+                        <option value="51">Romênia</option>
+                        <option value="179">Ruanda</option>
+                        <option value="52">Rússia</option>
+                        <option value="84">Samoa</option>
+                        <option value="180">San Marino</option>
+                        <option value="98">Santa Lúcia</option>
+                        <option value="181">São Cristóvão e Névis</option>
+                        <option value="182">São Tomé e Príncipe</option>
+                        <option value="76">São Vicente</option>
+                        <option value="68">Senegal</option>
+                        <option value="80">Serra Leoa</option>
+                        <option value="183">Sérvia</option>
+                        <option value="184">Seychelles</option>
+                        <option value="103">Singapura</option>
+                        <option value="185">Síria</option>
+                        <option value="96">Somália</option>
+                        <option value="95">Sri Lanka</option>
+                        <option value="186">Suazilândia</option>
+                        <option value="86">Sudão</option>
+                        <option value="187">Sudão do Sul</option>
+                        <option value="58">Suécia</option>
+                        <option value="59">Suíça</option>
+                        <option value="117">Suriname</option>
+                        <option value="188">Tailândia</option>
+                        <option value="189">Tajidquistão</option>
+                        <option value="190">Tanzânia</option>
+                        <option value="191">Timor Leste</option>
+                        <option value="192">Togo</option>
+                        <option value="193">Tonga</option>
+                        <option value="79">Trinidad Tobago</option>
+                        <option value="119">Tunísia</option>
+                        <option value="194">Turcomenistão</option>
+                        <option value="60">Turquia</option>
+                        <option value="195">Tuvalu</option>
+                        <option value="61">Ucrânia</option>
+                        <option value="81">Uganda</option>
+                        <option value="66">União da Sérvia e Montenegro</option>
+                        <option value="62">Uruguai</option>
+                        <option value="196">Uzbequistão</option>
+                        <option value="197">Vanuatu</option>
+                        <option value="64">Venezuela</option>
+                        <option value="198">Vietnã</option>
+                        <option value="90">Zâmbia</option>
+                        <option value="199">Zimbábue</option>
+                    </select>    
+                    <select name="nivelcurso" id="nivelcurso">
+                        <option selected="selected" value="">Nível</option>
+                        <option value="1">Ensino Fundamental (1º grau)</option>
+                        <option value="2">Curso extra-curricular / Profissionalizante </option>
+                        <option value="3">Ensino Médio (2º Grau)</option>
+                        <option value="4">Curso Técnico</option>
+                        <option value="5">Ensino Superior</option>
+                        <option value="6">Pós-graduação - Especialização/MBA</option>
+                        <option value="7">Pós-graduação - Mestrado</option>
+                        <option value="8">Pós-graduação - Doutorado</option>
+                    
+                    </select>
+                    <select name="curso" id="curso">
+                        <option value="">Curso</option><option value="268">3D Studio Max</option><option value="102">Acordeon</option><option value="95">ActionScript MX</option><option value="269">Administrativo</option><option value="265">Aeromoça</option><option value="3">Agente de turismo</option><option value="305">Artesanato em madeira</option><option value="312">Artes Plásticas</option><option value="103">Assesoria fiscal e tributária</option><option value="97">ATP Poser 4</option><option value="273">Autocad</option><option value="274">Auxiliar clínica veterinária</option><option value="106">Auxiliar de enfermagem</option><option value="105">Auxiliar de jardim de infância</option><option value="4">Auxiliar de odontologia</option><option value="171">Avaliação de empresas</option><option value="151">Cabeleireiro</option><option value="96">Carpintaria</option><option value="2">Cenografia</option><option value="144">Cobranças por telefone</option><option value="278">Colorimetria aplicada</option><option value="168">Construção predial</option><option value="112">Consultor em segurança Microsoft 2003</option><option value="113">Contabilidade analítica</option><option value="101">Contabilidade básica</option><option value="281">Contabilidade de custos</option><option value="280">Contabilidade geral</option><option value="115">Contabilidade para executivos</option><option value="116">Contabilidade para servidores</option><option value="119">Contabilidade pública</option><option value="163">Contabilidade tributária</option><option value="121">Controle de gestão</option><option value="350">Corte e costura</option><option value="282">Costura em couro</option><option value="123">Criação/gestão de cursos de e-learning</option><option value="286">Culinária</option><option value="16">Curso de língua inglesa</option><option value="34">Curso de línguas estrangeiras</option><option value="148">Dança</option><option value="125">Decoração</option><option value="285">Desenho</option><option value="330">Desenho 3Dstudio Max-2003</option><option value="179">Desenho de moda</option><option value="108">Desenho em quadrinhos</option><option value="287">Desenho gráfico</option><option value="127">Desenvolvimento do poder mental</option><option value="290">Design de interiores</option><option value="136">Dietética e nutrição</option><option value="126">Direito comercial</option><option value="351">Dreamweaver MX</option><option value="132">Educação meio-ambiental</option><option value="325">EJB</option><option value="292">Eletricista</option><option value="293">Eletrônica e micro-eletrônica</option><option value="299">Encanador</option><option value="294">Energia solar</option><option value="1036">Engenharia Aeroespacial</option><option value="1035">Engenharia de Automação</option><option value="1034">Engenheiro de Produtos</option><option value="341">Especialização em audiovisuais</option><option value="334">Especialização em Comércio eletrônico</option><option value="337">Especialização em Contabilidade Gerencial</option><option value="154">Especialização em desenho em movimento</option><option value="248">Especialização em direção comercial e marketing</option><option value="336">Especialização em direito de novas tecnologias</option><option value="317">Especialização em prótese dentária</option><option value="128">Estética</option><option value="298">Fireworks MX</option><option value="333">Fiscalização de operações financeiras</option><option value="324">Flash MX</option><option value="180">Fotografia</option><option value="111">Gestão atuarial e financeira</option><option value="142">Gestão de contas</option><option value="143">Gestão de tesouraria</option><option value="357">Gestão em eventos culturais e desportivos</option><option value="302">Gestão financeira de pequenas empresas</option><option value="139">Gestão meio-ambiental</option><option value="146">Guitarra</option><option value="332">Imposto de renda</option><option value="331">Impostos de produtos</option><option value="147">Informática musical</option><option value="100">Iniciação à música</option><option value="320">Instalação/manutenção de PC's</option><option value="303">Instalador de gás</option><option value="149">Introdução ao Windows, Word e Internet</option><option value="326">J2EE</option><option value="329">JAVA 2003 Professional</option><option value="50">Locução e sonoplastia</option><option value="304">Manutenção de ar condicionado</option><option value="306">Master Web</option><option value="307">Mecânico de motos</option><option value="308">Mecânico do automóvel</option><option value="295">Modos de pagamentos</option><option value="343">Montagem de cinema e produção TV</option><option value="309">Motores a diesel</option><option value="313">MS Project</option><option value="150">Normas internacionais de contabilidade</option><option value="277">Oficina/chapista</option><option value="271">Pedreiro</option><option value="328">Photoshop 6.0</option><option value="354">PHP e MySQL</option><option value="156">Piano</option><option value="311">Pigmentos e corantes</option><option value="272">Pintura</option><option value="327">Planejamento fiscal internacional</option><option value="355">Produção multimídia</option><option value="174">Projetista mecânico</option><option value="315">Proteção Civil</option><option value="52">Recepcionista/Telefonista</option><option value="353">Roteiro de cinema e TV</option><option value="338">Segurança e direito do trabalho</option><option value="276">Serralheiro</option><option value="318">Sistemas micro-informáticos</option><option value="319">Soldador</option><option value="279">Supervisor de obras</option><option value="51">Teatro e espaço cênico</option><option value="157">Teclado</option><option value="99">Técnico de alimentos</option><option value="340">Técnico em plásticos</option><option value="133">Técnico em tratamento de águas</option><option value="161">Técnico meio-ambiente</option><option value="74">Telemarketing</option><option value="181">Tradutor / Intérprete</option><option value="166">Tunning</option><option value="322">Vigilante de segurança</option><option value="172">XML</option>
+                    </select>    
+                </div>  
+                <div class="situ">
+                    <ul class="listacurso">
+                        <li>    
+                            <input id="concluido" type="radio" name="situacao1" value="co">
+                            <label for="concluido">Concluído</label>
+                        </li>
+                        <li>
+                            <input id="cursando" type="radio" name="situacao1" value="cu">
+                            <label for="cursando">Cursando</label>
+                        </li>
+                        <li>
+                            <input id="trancado" type="radio" name="situacao1" value="tr"><label for="trancado">Trancado</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="text" name="instit" id="instit" placeholder="Instituição">
+                    <select name="pais" id="pais">
+                        <option value="">País onde estudou</option>
+                        <option value="124">Afeganistão</option>
+                        <option value="56">África do Sul</option>
+                        <option value="15">Albânia</option>
+                        <option value="27">Alemanha</option>
+                        <option value="32">Andorra</option>
+                        <option value="63">Angola</option>
+                        <option value="70">Antígua e Barbuda</option>
+                        <option value="125">Arábia Saudita</option>
+                        <option value="126">Argélia</option>
+                        <option value="4">Argentina</option>
+                        <option value="5">Armênia</option>
+                        <option value="6">Austrália</option>
+                        <option value="7">Áustria</option>
+                        <option value="127">Azerbaijão</option>
+                        <option value="8">Bahamas</option>
+                        <option value="128">Bangladesh</option>
+                        <option value="88">Barbados</option>
+                        <option value="129">Barein</option>
+                        <option value="10">Belarus</option>
+                        <option value="9">Bélgica</option>
+                        <option value="111">Belize</option>
+                        <option value="130">Benin</option>
+                        <option value="106">Bolívia</option>
+                        <option value="11">Bósnia Herzegovina</option>
+                        <option value="201">Botswana</option>
+                        <option selected="selected" value="12">Brasil</option>
+                        <option value="131">Brunei</option>
+                        <option value="13">Bulgária</option>
+                        <option value="132">Burkina Faso</option>
+                        <option value="133">Burundi</option>
+                        <option value="134">Butão</option>
+                        <option value="82">Cabo verde</option>
+                        <option value="14">Camarões</option>
+                        <option value="135">Camboja</option>
+                        <option value="1">Canadá</option>
+                        <option value="109">Caribe</option>
+                        <option value="136">Catar</option>
+                        <option value="36">Cazaquistão</option>
+                        <option value="137">Chade</option>
+                        <option value="107">Chile</option>
+                        <option value="121">China</option>
+                        <option value="18">Chipre</option>
+                        <option value="93">Colômbia</option>
+                        <option value="138">Comores</option>
+                        <option value="92">Congo</option>
+                        <option value="139">Coreia do Norte</option>
+                        <option value="123">Coreia do Sul</option>
+                        <option value="140">Costa do Marfim</option>
+                        <option value="78">Costa Rica</option>
+                        <option value="16">Croácia</option>
+                        <option value="17">Cuba</option>
+                        <option value="20">Dinamarca</option>
+                        <option value="141">Djibuti</option>
+                        <option value="142">Dominica</option>
+                        <option value="22">Egito</option>
+                        <option value="110">El Salvador</option>
+                        <option value="143">Emirados Árabes Unidos</option>
+                        <option value="108">Equador</option>
+                        <option value="144">Eritreia</option>
+                        <option value="54">Eslováquia</option>
+                        <option value="55">Eslovênia</option>
+                        <option value="57">Espanha</option>
+                        <option value="3">Estados Unidos</option>
+                        <option value="24">Estônia</option>
+                        <option value="145">Etiópia</option>
+                        <option value="200">Federação dos Estados da Micronésia</option>
+                        <option value="146">Fiji</option>
+                        <option value="47">Filipinas</option>
+                        <option value="25">Finlândia</option>
+                        <option value="26">Francia</option>
+                        <option value="147">Gabão</option>
+                        <option value="77">Gâmbia</option>
+                        <option value="148">Gana</option>
+                        <option value="149">Geórgia</option>
+                        <option value="150">Granada</option>
+                        <option value="28">Grécia</option>
+                        <option value="105">Guatemala</option>
+                        <option value="112">Guiana</option>
+                        <option value="113">Guiana francesa</option>
+                        <option value="122">Guinea Equatorial</option>
+                        <option value="151">Guiné-Bissau</option>
+                        <option value="152">Haiti</option>
+                        <option value="44">Holanda</option>
+                        <option value="114">Honduras</option>
+                        <option value="29">Hungria</option>
+                        <option value="153">Iemen</option>
+                        <option value="75">Ilhas Marshall</option>
+                        <option value="91">Ilhas Salomão</option>
+                        <option value="72">Índia</option>
+                        <option value="154">Indonésia</option>
+                        <option value="155">Irã</option>
+                        <option value="156">Iraque</option>
+                        <option value="31">Irlanda</option>
+                        <option value="30">Islândia</option>
+                        <option value="2">Israel</option>
+                        <option value="33">Itália</option>
+                        <option value="34">Jamaica</option>
+                        <option value="35">Japão</option>
+                        <option value="73">Jordânia</option>
+                        <option value="157">Kiribati</option>
+                        <option value="158">Kuwait</option>
+                        <option value="71">Kyrgyzstan</option>
+                        <option value="94">Laos</option>
+                        <option value="37">Latvia</option>
+                        <option value="67">Líbano</option>
+                        <option value="74">Libéria</option>
+                        <option value="159">Líbia</option>
+                        <option value="160">Liechtenstein</option>
+                        <option value="38">Lituânia</option>
+                        <option value="39">Luxemburgo</option>
+                        <option value="102">Malásia</option>
+                        <option value="161">Malawi</option>
+                        <option value="162">Maldivas</option>
+                        <option value="40">Mali</option>
+                        <option value="41">Malta</option>
+                        <option value="120">Marrocos</option>
+                        <option value="163">Maurício</option>
+                        <option value="164">Mauritânia</option>
+                        <option value="42">México</option>
+                        <option value="165">Mianmar</option>
+                        <option value="166">Moçambique</option>
+                        <option value="43">Moldova</option>
+                        <option value="167">Mongólia</option>
+                        <option value="168">Montenegro</option>
+                        <option value="169">Namíbia</option>
+                        <option value="170">Nauru</option>
+                        <option value="171">Nepal</option>
+                        <option value="115">Nicarágua</option>
+                        <option value="172">Níger</option>
+                        <option value="45">Nigéria</option>
+                        <option value="46">Noruega</option>
+                        <option value="85">Nova Zelândia</option>
+                        <option value="173">Omã</option>
+                        <option value="87">Palau</option>
+                        <option value="69">Panamá</option>
+                        <option value="174">Papua Nova Guiné</option>
+                        <option value="175">Paquistão</option>
+                        <option value="116">Paraguai</option>
+                        <option value="83">Peru</option>
+                        <option value="48">Polônia</option>
+                        <option value="50">Porto Rico</option>
+                        <option value="49">Portugal</option>
+                        <option value="97">Principado de Mônaco</option>
+                        <option value="89">Quênia</option>
+                        <option value="176">Quirguistão</option>
+                        <option value="101">Reino Unido</option>
+                        <option value="177">República Centro Africana</option>
+                        <option value="19">República Checa</option>
+                        <option value="178">República Democrática do Congo</option>
+                        <option value="21">República Dominicana</option>
+                        <option value="51">Romênia</option>
+                        <option value="179">Ruanda</option>
+                        <option value="52">Rússia</option>
+                        <option value="84">Samoa</option>
+                        <option value="180">San Marino</option>
+                        <option value="98">Santa Lúcia</option>
+                        <option value="181">São Cristóvão e Névis</option>
+                        <option value="182">São Tomé e Príncipe</option>
+                        <option value="76">São Vicente</option>
+                        <option value="68">Senegal</option>
+                        <option value="80">Serra Leoa</option>
+                        <option value="183">Sérvia</option>
+                        <option value="184">Seychelles</option>
+                        <option value="103">Singapura</option>
+                        <option value="185">Síria</option>
+                        <option value="96">Somália</option>
+                        <option value="95">Sri Lanka</option>
+                        <option value="186">Suazilândia</option>
+                        <option value="86">Sudão</option>
+                        <option value="187">Sudão do Sul</option>
+                        <option value="58">Suécia</option>
+                        <option value="59">Suíça</option>
+                        <option value="117">Suriname</option>
+                        <option value="188">Tailândia</option>
+                        <option value="189">Tajidquistão</option>
+                        <option value="190">Tanzânia</option>
+                        <option value="191">Timor Leste</option>
+                        <option value="192">Togo</option>
+                        <option value="193">Tonga</option>
+                        <option value="79">Trinidad Tobago</option>
+                        <option value="119">Tunísia</option>
+                        <option value="194">Turcomenistão</option>
+                        <option value="60">Turquia</option>
+                        <option value="195">Tuvalu</option>
+                        <option value="61">Ucrânia</option>
+                        <option value="81">Uganda</option>
+                        <option value="66">União da Sérvia e Montenegro</option>
+                        <option value="62">Uruguai</option>
+                        <option value="196">Uzbequistão</option>
+                        <option value="197">Vanuatu</option>
+                        <option value="64">Venezuela</option>
+                        <option value="198">Vietnã</option>
+                        <option value="90">Zâmbia</option>
+                        <option value="199">Zimbábue</option>
+                    </select>    
+                    <select name="nivelcurso" id="nivelcurso">
+                        <option selected="selected" value="">Nível</option>
+                        <option value="1">Ensino Fundamental (1º grau)</option>
+                        <option value="2">Curso extra-curricular / Profissionalizante </option>
+                        <option value="3">Ensino Médio (2º Grau)</option>
+                        <option value="4">Curso Técnico</option>
+                        <option value="5">Ensino Superior</option>
+                        <option value="6">Pós-graduação - Especialização/MBA</option>
+                        <option value="7">Pós-graduação - Mestrado</option>
+                        <option value="8">Pós-graduação - Doutorado</option>
+                    
+                    </select>
+                    <select name="curso" id="curso">
+                        <option value="">Curso</option><option value="268">3D Studio Max</option><option value="102">Acordeon</option><option value="95">ActionScript MX</option><option value="269">Administrativo</option><option value="265">Aeromoça</option><option value="3">Agente de turismo</option><option value="305">Artesanato em madeira</option><option value="312">Artes Plásticas</option><option value="103">Assesoria fiscal e tributária</option><option value="97">ATP Poser 4</option><option value="273">Autocad</option><option value="274">Auxiliar clínica veterinária</option><option value="106">Auxiliar de enfermagem</option><option value="105">Auxiliar de jardim de infância</option><option value="4">Auxiliar de odontologia</option><option value="171">Avaliação de empresas</option><option value="151">Cabeleireiro</option><option value="96">Carpintaria</option><option value="2">Cenografia</option><option value="144">Cobranças por telefone</option><option value="278">Colorimetria aplicada</option><option value="168">Construção predial</option><option value="112">Consultor em segurança Microsoft 2003</option><option value="113">Contabilidade analítica</option><option value="101">Contabilidade básica</option><option value="281">Contabilidade de custos</option><option value="280">Contabilidade geral</option><option value="115">Contabilidade para executivos</option><option value="116">Contabilidade para servidores</option><option value="119">Contabilidade pública</option><option value="163">Contabilidade tributária</option><option value="121">Controle de gestão</option><option value="350">Corte e costura</option><option value="282">Costura em couro</option><option value="123">Criação/gestão de cursos de e-learning</option><option value="286">Culinária</option><option value="16">Curso de língua inglesa</option><option value="34">Curso de línguas estrangeiras</option><option value="148">Dança</option><option value="125">Decoração</option><option value="285">Desenho</option><option value="330">Desenho 3Dstudio Max-2003</option><option value="179">Desenho de moda</option><option value="108">Desenho em quadrinhos</option><option value="287">Desenho gráfico</option><option value="127">Desenvolvimento do poder mental</option><option value="290">Design de interiores</option><option value="136">Dietética e nutrição</option><option value="126">Direito comercial</option><option value="351">Dreamweaver MX</option><option value="132">Educação meio-ambiental</option><option value="325">EJB</option><option value="292">Eletricista</option><option value="293">Eletrônica e micro-eletrônica</option><option value="299">Encanador</option><option value="294">Energia solar</option><option value="1036">Engenharia Aeroespacial</option><option value="1035">Engenharia de Automação</option><option value="1034">Engenheiro de Produtos</option><option value="341">Especialização em audiovisuais</option><option value="334">Especialização em Comércio eletrônico</option><option value="337">Especialização em Contabilidade Gerencial</option><option value="154">Especialização em desenho em movimento</option><option value="248">Especialização em direção comercial e marketing</option><option value="336">Especialização em direito de novas tecnologias</option><option value="317">Especialização em prótese dentária</option><option value="128">Estética</option><option value="298">Fireworks MX</option><option value="333">Fiscalização de operações financeiras</option><option value="324">Flash MX</option><option value="180">Fotografia</option><option value="111">Gestão atuarial e financeira</option><option value="142">Gestão de contas</option><option value="143">Gestão de tesouraria</option><option value="357">Gestão em eventos culturais e desportivos</option><option value="302">Gestão financeira de pequenas empresas</option><option value="139">Gestão meio-ambiental</option><option value="146">Guitarra</option><option value="332">Imposto de renda</option><option value="331">Impostos de produtos</option><option value="147">Informática musical</option><option value="100">Iniciação à música</option><option value="320">Instalação/manutenção de PC's</option><option value="303">Instalador de gás</option><option value="149">Introdução ao Windows, Word e Internet</option><option value="326">J2EE</option><option value="329">JAVA 2003 Professional</option><option value="50">Locução e sonoplastia</option><option value="304">Manutenção de ar condicionado</option><option value="306">Master Web</option><option value="307">Mecânico de motos</option><option value="308">Mecânico do automóvel</option><option value="295">Modos de pagamentos</option><option value="343">Montagem de cinema e produção TV</option><option value="309">Motores a diesel</option><option value="313">MS Project</option><option value="150">Normas internacionais de contabilidade</option><option value="277">Oficina/chapista</option><option value="271">Pedreiro</option><option value="328">Photoshop 6.0</option><option value="354">PHP e MySQL</option><option value="156">Piano</option><option value="311">Pigmentos e corantes</option><option value="272">Pintura</option><option value="327">Planejamento fiscal internacional</option><option value="355">Produção multimídia</option><option value="174">Projetista mecânico</option><option value="315">Proteção Civil</option><option value="52">Recepcionista/Telefonista</option><option value="353">Roteiro de cinema e TV</option><option value="338">Segurança e direito do trabalho</option><option value="276">Serralheiro</option><option value="318">Sistemas micro-informáticos</option><option value="319">Soldador</option><option value="279">Supervisor de obras</option><option value="51">Teatro e espaço cênico</option><option value="157">Teclado</option><option value="99">Técnico de alimentos</option><option value="340">Técnico em plásticos</option><option value="133">Técnico em tratamento de águas</option><option value="161">Técnico meio-ambiente</option><option value="74">Telemarketing</option><option value="181">Tradutor / Intérprete</option><option value="166">Tunning</option><option value="322">Vigilante de segurança</option><option value="172">XML</option>
+                    </select>    
+                </div>  
+                <div class="situ">
+                    <ul class="listacurso">
+                        <li>    
+                            <input id="concluido" type="radio" name="situacao2" value="co">
+                            <label for="concluido">Concluído</label>
+                        </li>
+                        <li>
+                            <input id="cursando" type="radio" name="situacao2" value="cu">
+                            <label for="cursando">Cursando</label>
+                        </li>
+                        <li>
+                            <input id="trancado" type="radio" name="situacao2" value="tr"><label for="trancado">Trancado</label>
+                        </li>
+                    </ul>
+                </div> 
+                <div>
+                    <input type="text" name="instit" id="instit" placeholder="Instituição">
+                    <select name="pais" id="pais">
+                        <option value="">País onde estudou</option>
+                        <option value="124">Afeganistão</option>
+                        <option value="56">África do Sul</option>
+                        <option value="15">Albânia</option>
+                        <option value="27">Alemanha</option>
+                        <option value="32">Andorra</option>
+                        <option value="63">Angola</option>
+                        <option value="70">Antígua e Barbuda</option>
+                        <option value="125">Arábia Saudita</option>
+                        <option value="126">Argélia</option>
+                        <option value="4">Argentina</option>
+                        <option value="5">Armênia</option>
+                        <option value="6">Austrália</option>
+                        <option value="7">Áustria</option>
+                        <option value="127">Azerbaijão</option>
+                        <option value="8">Bahamas</option>
+                        <option value="128">Bangladesh</option>
+                        <option value="88">Barbados</option>
+                        <option value="129">Barein</option>
+                        <option value="10">Belarus</option>
+                        <option value="9">Bélgica</option>
+                        <option value="111">Belize</option>
+                        <option value="130">Benin</option>
+                        <option value="106">Bolívia</option>
+                        <option value="11">Bósnia Herzegovina</option>
+                        <option value="201">Botswana</option>
+                        <option selected="selected" value="12">Brasil</option>
+                        <option value="131">Brunei</option>
+                        <option value="13">Bulgária</option>
+                        <option value="132">Burkina Faso</option>
+                        <option value="133">Burundi</option>
+                        <option value="134">Butão</option>
+                        <option value="82">Cabo verde</option>
+                        <option value="14">Camarões</option>
+                        <option value="135">Camboja</option>
+                        <option value="1">Canadá</option>
+                        <option value="109">Caribe</option>
+                        <option value="136">Catar</option>
+                        <option value="36">Cazaquistão</option>
+                        <option value="137">Chade</option>
+                        <option value="107">Chile</option>
+                        <option value="121">China</option>
+                        <option value="18">Chipre</option>
+                        <option value="93">Colômbia</option>
+                        <option value="138">Comores</option>
+                        <option value="92">Congo</option>
+                        <option value="139">Coreia do Norte</option>
+                        <option value="123">Coreia do Sul</option>
+                        <option value="140">Costa do Marfim</option>
+                        <option value="78">Costa Rica</option>
+                        <option value="16">Croácia</option>
+                        <option value="17">Cuba</option>
+                        <option value="20">Dinamarca</option>
+                        <option value="141">Djibuti</option>
+                        <option value="142">Dominica</option>
+                        <option value="22">Egito</option>
+                        <option value="110">El Salvador</option>
+                        <option value="143">Emirados Árabes Unidos</option>
+                        <option value="108">Equador</option>
+                        <option value="144">Eritreia</option>
+                        <option value="54">Eslováquia</option>
+                        <option value="55">Eslovênia</option>
+                        <option value="57">Espanha</option>
+                        <option value="3">Estados Unidos</option>
+                        <option value="24">Estônia</option>
+                        <option value="145">Etiópia</option>
+                        <option value="200">Federação dos Estados da Micronésia</option>
+                        <option value="146">Fiji</option>
+                        <option value="47">Filipinas</option>
+                        <option value="25">Finlândia</option>
+                        <option value="26">Francia</option>
+                        <option value="147">Gabão</option>
+                        <option value="77">Gâmbia</option>
+                        <option value="148">Gana</option>
+                        <option value="149">Geórgia</option>
+                        <option value="150">Granada</option>
+                        <option value="28">Grécia</option>
+                        <option value="105">Guatemala</option>
+                        <option value="112">Guiana</option>
+                        <option value="113">Guiana francesa</option>
+                        <option value="122">Guinea Equatorial</option>
+                        <option value="151">Guiné-Bissau</option>
+                        <option value="152">Haiti</option>
+                        <option value="44">Holanda</option>
+                        <option value="114">Honduras</option>
+                        <option value="29">Hungria</option>
+                        <option value="153">Iemen</option>
+                        <option value="75">Ilhas Marshall</option>
+                        <option value="91">Ilhas Salomão</option>
+                        <option value="72">Índia</option>
+                        <option value="154">Indonésia</option>
+                        <option value="155">Irã</option>
+                        <option value="156">Iraque</option>
+                        <option value="31">Irlanda</option>
+                        <option value="30">Islândia</option>
+                        <option value="2">Israel</option>
+                        <option value="33">Itália</option>
+                        <option value="34">Jamaica</option>
+                        <option value="35">Japão</option>
+                        <option value="73">Jordânia</option>
+                        <option value="157">Kiribati</option>
+                        <option value="158">Kuwait</option>
+                        <option value="71">Kyrgyzstan</option>
+                        <option value="94">Laos</option>
+                        <option value="37">Latvia</option>
+                        <option value="67">Líbano</option>
+                        <option value="74">Libéria</option>
+                        <option value="159">Líbia</option>
+                        <option value="160">Liechtenstein</option>
+                        <option value="38">Lituânia</option>
+                        <option value="39">Luxemburgo</option>
+                        <option value="102">Malásia</option>
+                        <option value="161">Malawi</option>
+                        <option value="162">Maldivas</option>
+                        <option value="40">Mali</option>
+                        <option value="41">Malta</option>
+                        <option value="120">Marrocos</option>
+                        <option value="163">Maurício</option>
+                        <option value="164">Mauritânia</option>
+                        <option value="42">México</option>
+                        <option value="165">Mianmar</option>
+                        <option value="166">Moçambique</option>
+                        <option value="43">Moldova</option>
+                        <option value="167">Mongólia</option>
+                        <option value="168">Montenegro</option>
+                        <option value="169">Namíbia</option>
+                        <option value="170">Nauru</option>
+                        <option value="171">Nepal</option>
+                        <option value="115">Nicarágua</option>
+                        <option value="172">Níger</option>
+                        <option value="45">Nigéria</option>
+                        <option value="46">Noruega</option>
+                        <option value="85">Nova Zelândia</option>
+                        <option value="173">Omã</option>
+                        <option value="87">Palau</option>
+                        <option value="69">Panamá</option>
+                        <option value="174">Papua Nova Guiné</option>
+                        <option value="175">Paquistão</option>
+                        <option value="116">Paraguai</option>
+                        <option value="83">Peru</option>
+                        <option value="48">Polônia</option>
+                        <option value="50">Porto Rico</option>
+                        <option value="49">Portugal</option>
+                        <option value="97">Principado de Mônaco</option>
+                        <option value="89">Quênia</option>
+                        <option value="176">Quirguistão</option>
+                        <option value="101">Reino Unido</option>
+                        <option value="177">República Centro Africana</option>
+                        <option value="19">República Checa</option>
+                        <option value="178">República Democrática do Congo</option>
+                        <option value="21">República Dominicana</option>
+                        <option value="51">Romênia</option>
+                        <option value="179">Ruanda</option>
+                        <option value="52">Rússia</option>
+                        <option value="84">Samoa</option>
+                        <option value="180">San Marino</option>
+                        <option value="98">Santa Lúcia</option>
+                        <option value="181">São Cristóvão e Névis</option>
+                        <option value="182">São Tomé e Príncipe</option>
+                        <option value="76">São Vicente</option>
+                        <option value="68">Senegal</option>
+                        <option value="80">Serra Leoa</option>
+                        <option value="183">Sérvia</option>
+                        <option value="184">Seychelles</option>
+                        <option value="103">Singapura</option>
+                        <option value="185">Síria</option>
+                        <option value="96">Somália</option>
+                        <option value="95">Sri Lanka</option>
+                        <option value="186">Suazilândia</option>
+                        <option value="86">Sudão</option>
+                        <option value="187">Sudão do Sul</option>
+                        <option value="58">Suécia</option>
+                        <option value="59">Suíça</option>
+                        <option value="117">Suriname</option>
+                        <option value="188">Tailândia</option>
+                        <option value="189">Tajidquistão</option>
+                        <option value="190">Tanzânia</option>
+                        <option value="191">Timor Leste</option>
+                        <option value="192">Togo</option>
+                        <option value="193">Tonga</option>
+                        <option value="79">Trinidad Tobago</option>
+                        <option value="119">Tunísia</option>
+                        <option value="194">Turcomenistão</option>
+                        <option value="60">Turquia</option>
+                        <option value="195">Tuvalu</option>
+                        <option value="61">Ucrânia</option>
+                        <option value="81">Uganda</option>
+                        <option value="66">União da Sérvia e Montenegro</option>
+                        <option value="62">Uruguai</option>
+                        <option value="196">Uzbequistão</option>
+                        <option value="197">Vanuatu</option>
+                        <option value="64">Venezuela</option>
+                        <option value="198">Vietnã</option>
+                        <option value="90">Zâmbia</option>
+                        <option value="199">Zimbábue</option>
+                    </select>    
+                    <select name="nivelcurso" id="nivelcurso">
+                        <option selected="selected" value="">Nível</option>
+                        <option value="1">Ensino Fundamental (1º grau)</option>
+                        <option value="2">Curso extra-curricular / Profissionalizante </option>
+                        <option value="3">Ensino Médio (2º Grau)</option>
+                        <option value="4">Curso Técnico</option>
+                        <option value="5">Ensino Superior</option>
+                        <option value="6">Pós-graduação - Especialização/MBA</option>
+                        <option value="7">Pós-graduação - Mestrado</option>
+                        <option value="8">Pós-graduação - Doutorado</option>
+                    
+                    </select>
+                    <select name="curso" id="curso">
+                        <option value="">Curso</option><option value="268">3D Studio Max</option><option value="102">Acordeon</option><option value="95">ActionScript MX</option><option value="269">Administrativo</option><option value="265">Aeromoça</option><option value="3">Agente de turismo</option><option value="305">Artesanato em madeira</option><option value="312">Artes Plásticas</option><option value="103">Assesoria fiscal e tributária</option><option value="97">ATP Poser 4</option><option value="273">Autocad</option><option value="274">Auxiliar clínica veterinária</option><option value="106">Auxiliar de enfermagem</option><option value="105">Auxiliar de jardim de infância</option><option value="4">Auxiliar de odontologia</option><option value="171">Avaliação de empresas</option><option value="151">Cabeleireiro</option><option value="96">Carpintaria</option><option value="2">Cenografia</option><option value="144">Cobranças por telefone</option><option value="278">Colorimetria aplicada</option><option value="168">Construção predial</option><option value="112">Consultor em segurança Microsoft 2003</option><option value="113">Contabilidade analítica</option><option value="101">Contabilidade básica</option><option value="281">Contabilidade de custos</option><option value="280">Contabilidade geral</option><option value="115">Contabilidade para executivos</option><option value="116">Contabilidade para servidores</option><option value="119">Contabilidade pública</option><option value="163">Contabilidade tributária</option><option value="121">Controle de gestão</option><option value="350">Corte e costura</option><option value="282">Costura em couro</option><option value="123">Criação/gestão de cursos de e-learning</option><option value="286">Culinária</option><option value="16">Curso de língua inglesa</option><option value="34">Curso de línguas estrangeiras</option><option value="148">Dança</option><option value="125">Decoração</option><option value="285">Desenho</option><option value="330">Desenho 3Dstudio Max-2003</option><option value="179">Desenho de moda</option><option value="108">Desenho em quadrinhos</option><option value="287">Desenho gráfico</option><option value="127">Desenvolvimento do poder mental</option><option value="290">Design de interiores</option><option value="136">Dietética e nutrição</option><option value="126">Direito comercial</option><option value="351">Dreamweaver MX</option><option value="132">Educação meio-ambiental</option><option value="325">EJB</option><option value="292">Eletricista</option><option value="293">Eletrônica e micro-eletrônica</option><option value="299">Encanador</option><option value="294">Energia solar</option><option value="1036">Engenharia Aeroespacial</option><option value="1035">Engenharia de Automação</option><option value="1034">Engenheiro de Produtos</option><option value="341">Especialização em audiovisuais</option><option value="334">Especialização em Comércio eletrônico</option><option value="337">Especialização em Contabilidade Gerencial</option><option value="154">Especialização em desenho em movimento</option><option value="248">Especialização em direção comercial e marketing</option><option value="336">Especialização em direito de novas tecnologias</option><option value="317">Especialização em prótese dentária</option><option value="128">Estética</option><option value="298">Fireworks MX</option><option value="333">Fiscalização de operações financeiras</option><option value="324">Flash MX</option><option value="180">Fotografia</option><option value="111">Gestão atuarial e financeira</option><option value="142">Gestão de contas</option><option value="143">Gestão de tesouraria</option><option value="357">Gestão em eventos culturais e desportivos</option><option value="302">Gestão financeira de pequenas empresas</option><option value="139">Gestão meio-ambiental</option><option value="146">Guitarra</option><option value="332">Imposto de renda</option><option value="331">Impostos de produtos</option><option value="147">Informática musical</option><option value="100">Iniciação à música</option><option value="320">Instalação/manutenção de PC's</option><option value="303">Instalador de gás</option><option value="149">Introdução ao Windows, Word e Internet</option><option value="326">J2EE</option><option value="329">JAVA 2003 Professional</option><option value="50">Locução e sonoplastia</option><option value="304">Manutenção de ar condicionado</option><option value="306">Master Web</option><option value="307">Mecânico de motos</option><option value="308">Mecânico do automóvel</option><option value="295">Modos de pagamentos</option><option value="343">Montagem de cinema e produção TV</option><option value="309">Motores a diesel</option><option value="313">MS Project</option><option value="150">Normas internacionais de contabilidade</option><option value="277">Oficina/chapista</option><option value="271">Pedreiro</option><option value="328">Photoshop 6.0</option><option value="354">PHP e MySQL</option><option value="156">Piano</option><option value="311">Pigmentos e corantes</option><option value="272">Pintura</option><option value="327">Planejamento fiscal internacional</option><option value="355">Produção multimídia</option><option value="174">Projetista mecânico</option><option value="315">Proteção Civil</option><option value="52">Recepcionista/Telefonista</option><option value="353">Roteiro de cinema e TV</option><option value="338">Segurança e direito do trabalho</option><option value="276">Serralheiro</option><option value="318">Sistemas micro-informáticos</option><option value="319">Soldador</option><option value="279">Supervisor de obras</option><option value="51">Teatro e espaço cênico</option><option value="157">Teclado</option><option value="99">Técnico de alimentos</option><option value="340">Técnico em plásticos</option><option value="133">Técnico em tratamento de águas</option><option value="161">Técnico meio-ambiente</option><option value="74">Telemarketing</option><option value="181">Tradutor / Intérprete</option><option value="166">Tunning</option><option value="322">Vigilante de segurança</option><option value="172">XML</option>
+                    </select>    
+                </div>  
+                <div class="situ">
+                    <ul class="listacurso">
+                        <li>    
+                            <input id="concluido" type="radio" name="situacao3" value="co">
+                            <label for="concluido">Concluído</label>
+                        </li>
+                        <li>
+                            <input id="cursando" type="radio" name="situacao3" value="cu">
+                            <label for="cursando">Cursando</label>
+                        </li>
+                        <li>
+                            <input id="trancado" type="radio" name="situacao3" value="tr"><label for="trancado">Trancado</label>
+                        </li>
+                    </ul>
+                </div> 
+                <div>
+                    <input type="text" name="instit" id="instit" placeholder="Instituição">
+                    <select name="pais" id="pais">
+                        <option value="">País onde estudou</option>
+                        <option value="124">Afeganistão</option>
+                        <option value="56">África do Sul</option>
+                        <option value="15">Albânia</option>
+                        <option value="27">Alemanha</option>
+                        <option value="32">Andorra</option>
+                        <option value="63">Angola</option>
+                        <option value="70">Antígua e Barbuda</option>
+                        <option value="125">Arábia Saudita</option>
+                        <option value="126">Argélia</option>
+                        <option value="4">Argentina</option>
+                        <option value="5">Armênia</option>
+                        <option value="6">Austrália</option>
+                        <option value="7">Áustria</option>
+                        <option value="127">Azerbaijão</option>
+                        <option value="8">Bahamas</option>
+                        <option value="128">Bangladesh</option>
+                        <option value="88">Barbados</option>
+                        <option value="129">Barein</option>
+                        <option value="10">Belarus</option>
+                        <option value="9">Bélgica</option>
+                        <option value="111">Belize</option>
+                        <option value="130">Benin</option>
+                        <option value="106">Bolívia</option>
+                        <option value="11">Bósnia Herzegovina</option>
+                        <option value="201">Botswana</option>
+                        <option selected="selected" value="12">Brasil</option>
+                        <option value="131">Brunei</option>
+                        <option value="13">Bulgária</option>
+                        <option value="132">Burkina Faso</option>
+                        <option value="133">Burundi</option>
+                        <option value="134">Butão</option>
+                        <option value="82">Cabo verde</option>
+                        <option value="14">Camarões</option>
+                        <option value="135">Camboja</option>
+                        <option value="1">Canadá</option>
+                        <option value="109">Caribe</option>
+                        <option value="136">Catar</option>
+                        <option value="36">Cazaquistão</option>
+                        <option value="137">Chade</option>
+                        <option value="107">Chile</option>
+                        <option value="121">China</option>
+                        <option value="18">Chipre</option>
+                        <option value="93">Colômbia</option>
+                        <option value="138">Comores</option>
+                        <option value="92">Congo</option>
+                        <option value="139">Coreia do Norte</option>
+                        <option value="123">Coreia do Sul</option>
+                        <option value="140">Costa do Marfim</option>
+                        <option value="78">Costa Rica</option>
+                        <option value="16">Croácia</option>
+                        <option value="17">Cuba</option>
+                        <option value="20">Dinamarca</option>
+                        <option value="141">Djibuti</option>
+                        <option value="142">Dominica</option>
+                        <option value="22">Egito</option>
+                        <option value="110">El Salvador</option>
+                        <option value="143">Emirados Árabes Unidos</option>
+                        <option value="108">Equador</option>
+                        <option value="144">Eritreia</option>
+                        <option value="54">Eslováquia</option>
+                        <option value="55">Eslovênia</option>
+                        <option value="57">Espanha</option>
+                        <option value="3">Estados Unidos</option>
+                        <option value="24">Estônia</option>
+                        <option value="145">Etiópia</option>
+                        <option value="200">Federação dos Estados da Micronésia</option>
+                        <option value="146">Fiji</option>
+                        <option value="47">Filipinas</option>
+                        <option value="25">Finlândia</option>
+                        <option value="26">Francia</option>
+                        <option value="147">Gabão</option>
+                        <option value="77">Gâmbia</option>
+                        <option value="148">Gana</option>
+                        <option value="149">Geórgia</option>
+                        <option value="150">Granada</option>
+                        <option value="28">Grécia</option>
+                        <option value="105">Guatemala</option>
+                        <option value="112">Guiana</option>
+                        <option value="113">Guiana francesa</option>
+                        <option value="122">Guinea Equatorial</option>
+                        <option value="151">Guiné-Bissau</option>
+                        <option value="152">Haiti</option>
+                        <option value="44">Holanda</option>
+                        <option value="114">Honduras</option>
+                        <option value="29">Hungria</option>
+                        <option value="153">Iemen</option>
+                        <option value="75">Ilhas Marshall</option>
+                        <option value="91">Ilhas Salomão</option>
+                        <option value="72">Índia</option>
+                        <option value="154">Indonésia</option>
+                        <option value="155">Irã</option>
+                        <option value="156">Iraque</option>
+                        <option value="31">Irlanda</option>
+                        <option value="30">Islândia</option>
+                        <option value="2">Israel</option>
+                        <option value="33">Itália</option>
+                        <option value="34">Jamaica</option>
+                        <option value="35">Japão</option>
+                        <option value="73">Jordânia</option>
+                        <option value="157">Kiribati</option>
+                        <option value="158">Kuwait</option>
+                        <option value="71">Kyrgyzstan</option>
+                        <option value="94">Laos</option>
+                        <option value="37">Latvia</option>
+                        <option value="67">Líbano</option>
+                        <option value="74">Libéria</option>
+                        <option value="159">Líbia</option>
+                        <option value="160">Liechtenstein</option>
+                        <option value="38">Lituânia</option>
+                        <option value="39">Luxemburgo</option>
+                        <option value="102">Malásia</option>
+                        <option value="161">Malawi</option>
+                        <option value="162">Maldivas</option>
+                        <option value="40">Mali</option>
+                        <option value="41">Malta</option>
+                        <option value="120">Marrocos</option>
+                        <option value="163">Maurício</option>
+                        <option value="164">Mauritânia</option>
+                        <option value="42">México</option>
+                        <option value="165">Mianmar</option>
+                        <option value="166">Moçambique</option>
+                        <option value="43">Moldova</option>
+                        <option value="167">Mongólia</option>
+                        <option value="168">Montenegro</option>
+                        <option value="169">Namíbia</option>
+                        <option value="170">Nauru</option>
+                        <option value="171">Nepal</option>
+                        <option value="115">Nicarágua</option>
+                        <option value="172">Níger</option>
+                        <option value="45">Nigéria</option>
+                        <option value="46">Noruega</option>
+                        <option value="85">Nova Zelândia</option>
+                        <option value="173">Omã</option>
+                        <option value="87">Palau</option>
+                        <option value="69">Panamá</option>
+                        <option value="174">Papua Nova Guiné</option>
+                        <option value="175">Paquistão</option>
+                        <option value="116">Paraguai</option>
+                        <option value="83">Peru</option>
+                        <option value="48">Polônia</option>
+                        <option value="50">Porto Rico</option>
+                        <option value="49">Portugal</option>
+                        <option value="97">Principado de Mônaco</option>
+                        <option value="89">Quênia</option>
+                        <option value="176">Quirguistão</option>
+                        <option value="101">Reino Unido</option>
+                        <option value="177">República Centro Africana</option>
+                        <option value="19">República Checa</option>
+                        <option value="178">República Democrática do Congo</option>
+                        <option value="21">República Dominicana</option>
+                        <option value="51">Romênia</option>
+                        <option value="179">Ruanda</option>
+                        <option value="52">Rússia</option>
+                        <option value="84">Samoa</option>
+                        <option value="180">San Marino</option>
+                        <option value="98">Santa Lúcia</option>
+                        <option value="181">São Cristóvão e Névis</option>
+                        <option value="182">São Tomé e Príncipe</option>
+                        <option value="76">São Vicente</option>
+                        <option value="68">Senegal</option>
+                        <option value="80">Serra Leoa</option>
+                        <option value="183">Sérvia</option>
+                        <option value="184">Seychelles</option>
+                        <option value="103">Singapura</option>
+                        <option value="185">Síria</option>
+                        <option value="96">Somália</option>
+                        <option value="95">Sri Lanka</option>
+                        <option value="186">Suazilândia</option>
+                        <option value="86">Sudão</option>
+                        <option value="187">Sudão do Sul</option>
+                        <option value="58">Suécia</option>
+                        <option value="59">Suíça</option>
+                        <option value="117">Suriname</option>
+                        <option value="188">Tailândia</option>
+                        <option value="189">Tajidquistão</option>
+                        <option value="190">Tanzânia</option>
+                        <option value="191">Timor Leste</option>
+                        <option value="192">Togo</option>
+                        <option value="193">Tonga</option>
+                        <option value="79">Trinidad Tobago</option>
+                        <option value="119">Tunísia</option>
+                        <option value="194">Turcomenistão</option>
+                        <option value="60">Turquia</option>
+                        <option value="195">Tuvalu</option>
+                        <option value="61">Ucrânia</option>
+                        <option value="81">Uganda</option>
+                        <option value="66">União da Sérvia e Montenegro</option>
+                        <option value="62">Uruguai</option>
+                        <option value="196">Uzbequistão</option>
+                        <option value="197">Vanuatu</option>
+                        <option value="64">Venezuela</option>
+                        <option value="198">Vietnã</option>
+                        <option value="90">Zâmbia</option>
+                        <option value="199">Zimbábue</option>
+                    </select>    
+                    <select name="nivelcurso" id="nivelcurso">
+                        <option selected="selected" value="">Nível</option>
+                        <option value="1">Ensino Fundamental (1º grau)</option>
+                        <option value="2">Curso extra-curricular / Profissionalizante </option>
+                        <option value="3">Ensino Médio (2º Grau)</option>
+                        <option value="4">Curso Técnico</option>
+                        <option value="5">Ensino Superior</option>
+                        <option value="6">Pós-graduação - Especialização/MBA</option>
+                        <option value="7">Pós-graduação - Mestrado</option>
+                        <option value="8">Pós-graduação - Doutorado</option>
+                    
+                    </select>
+                    <select name="curso" id="curso">
+                        <option value="">Curso</option><option value="268">3D Studio Max</option><option value="102">Acordeon</option><option value="95">ActionScript MX</option><option value="269">Administrativo</option><option value="265">Aeromoça</option><option value="3">Agente de turismo</option><option value="305">Artesanato em madeira</option><option value="312">Artes Plásticas</option><option value="103">Assesoria fiscal e tributária</option><option value="97">ATP Poser 4</option><option value="273">Autocad</option><option value="274">Auxiliar clínica veterinária</option><option value="106">Auxiliar de enfermagem</option><option value="105">Auxiliar de jardim de infância</option><option value="4">Auxiliar de odontologia</option><option value="171">Avaliação de empresas</option><option value="151">Cabeleireiro</option><option value="96">Carpintaria</option><option value="2">Cenografia</option><option value="144">Cobranças por telefone</option><option value="278">Colorimetria aplicada</option><option value="168">Construção predial</option><option value="112">Consultor em segurança Microsoft 2003</option><option value="113">Contabilidade analítica</option><option value="101">Contabilidade básica</option><option value="281">Contabilidade de custos</option><option value="280">Contabilidade geral</option><option value="115">Contabilidade para executivos</option><option value="116">Contabilidade para servidores</option><option value="119">Contabilidade pública</option><option value="163">Contabilidade tributária</option><option value="121">Controle de gestão</option><option value="350">Corte e costura</option><option value="282">Costura em couro</option><option value="123">Criação/gestão de cursos de e-learning</option><option value="286">Culinária</option><option value="16">Curso de língua inglesa</option><option value="34">Curso de línguas estrangeiras</option><option value="148">Dança</option><option value="125">Decoração</option><option value="285">Desenho</option><option value="330">Desenho 3Dstudio Max-2003</option><option value="179">Desenho de moda</option><option value="108">Desenho em quadrinhos</option><option value="287">Desenho gráfico</option><option value="127">Desenvolvimento do poder mental</option><option value="290">Design de interiores</option><option value="136">Dietética e nutrição</option><option value="126">Direito comercial</option><option value="351">Dreamweaver MX</option><option value="132">Educação meio-ambiental</option><option value="325">EJB</option><option value="292">Eletricista</option><option value="293">Eletrônica e micro-eletrônica</option><option value="299">Encanador</option><option value="294">Energia solar</option><option value="1036">Engenharia Aeroespacial</option><option value="1035">Engenharia de Automação</option><option value="1034">Engenheiro de Produtos</option><option value="341">Especialização em audiovisuais</option><option value="334">Especialização em Comércio eletrônico</option><option value="337">Especialização em Contabilidade Gerencial</option><option value="154">Especialização em desenho em movimento</option><option value="248">Especialização em direção comercial e marketing</option><option value="336">Especialização em direito de novas tecnologias</option><option value="317">Especialização em prótese dentária</option><option value="128">Estética</option><option value="298">Fireworks MX</option><option value="333">Fiscalização de operações financeiras</option><option value="324">Flash MX</option><option value="180">Fotografia</option><option value="111">Gestão atuarial e financeira</option><option value="142">Gestão de contas</option><option value="143">Gestão de tesouraria</option><option value="357">Gestão em eventos culturais e desportivos</option><option value="302">Gestão financeira de pequenas empresas</option><option value="139">Gestão meio-ambiental</option><option value="146">Guitarra</option><option value="332">Imposto de renda</option><option value="331">Impostos de produtos</option><option value="147">Informática musical</option><option value="100">Iniciação à música</option><option value="320">Instalação/manutenção de PC's</option><option value="303">Instalador de gás</option><option value="149">Introdução ao Windows, Word e Internet</option><option value="326">J2EE</option><option value="329">JAVA 2003 Professional</option><option value="50">Locução e sonoplastia</option><option value="304">Manutenção de ar condicionado</option><option value="306">Master Web</option><option value="307">Mecânico de motos</option><option value="308">Mecânico do automóvel</option><option value="295">Modos de pagamentos</option><option value="343">Montagem de cinema e produção TV</option><option value="309">Motores a diesel</option><option value="313">MS Project</option><option value="150">Normas internacionais de contabilidade</option><option value="277">Oficina/chapista</option><option value="271">Pedreiro</option><option value="328">Photoshop 6.0</option><option value="354">PHP e MySQL</option><option value="156">Piano</option><option value="311">Pigmentos e corantes</option><option value="272">Pintura</option><option value="327">Planejamento fiscal internacional</option><option value="355">Produção multimídia</option><option value="174">Projetista mecânico</option><option value="315">Proteção Civil</option><option value="52">Recepcionista/Telefonista</option><option value="353">Roteiro de cinema e TV</option><option value="338">Segurança e direito do trabalho</option><option value="276">Serralheiro</option><option value="318">Sistemas micro-informáticos</option><option value="319">Soldador</option><option value="279">Supervisor de obras</option><option value="51">Teatro e espaço cênico</option><option value="157">Teclado</option><option value="99">Técnico de alimentos</option><option value="340">Técnico em plásticos</option><option value="133">Técnico em tratamento de águas</option><option value="161">Técnico meio-ambiente</option><option value="74">Telemarketing</option><option value="181">Tradutor / Intérprete</option><option value="166">Tunning</option><option value="322">Vigilante de segurança</option><option value="172">XML</option>
+                    </select>    
+                </div>  
+                <div class="situ">
+                    <ul class="listacurso">
+                        <li>    
+                            <input id="concluido" type="radio" name="situacao4" value="co">
+                            <label for="concluido">Concluído</label>
+                        </li>
+                        <li>
+                            <input id="cursando" type="radio" name="situacao4" value="cu">
+                            <label for="cursando">Cursando</label>
+                        </li>
+                        <li>
+                            <input id="trancado" type="radio" name="situacao4" value="tr"><label for="trancado">Trancado</label>
+                        </li>
+                    </ul>
+                    <button type="button">
+                        <label for="facheck" ><p>Feito</p></label>
+                    </button>
+                </div>  
+            </div>
+        </div>
+    </form>
+
+    <form action="base.html" method="post" class="formulario">
+        <input type="checkbox" name="caixinha" class="caixinha" id="checkep">
+        <div class="trigger-wrapperep">
+            <label for="checkep"><p>Experiência Profissional</p></label>
+            <div class="divep">
+                <div class="empcar">
+                    <input type="text" name="empresa" id="empresa" placeholder="Cargo">
+                    <input type="text" name="cargo" id="cargo" placeholder="Cargo">
+                </div>
+                <div class="sal_niv_ar">
+                    <input type="text" name="salario" id="salario" placeholder="Salário">
+                    <select name="nivelhi" id="nivelhi">
+                        <option selected="selected" value="">Nível Hierárquico</option>
+                        <option value="1">Estagiário</option>
+                        <option value="2">Operacional</option>
+                        <option value="3">Auxiliar</option>
+                        <option value="4">Assistente</option>
+                        <option value="5">Trainee</option>
+                        <option value="6">Analista</option>
+                        <option value="7">Encarregado</option>
+                        <option value="8">Supervisor</option>
+                        <option value="9">Consultor</option>
+                        <option value="10">Especialista</option>
+                        <option value="11">Coordenador</option>
+                        <option value="12">Gerente</option>
+                        <option value="13">Diretor</option>
+                    </select>
+                    <select name="area" id="area">
+                        <option selected="selected" value="">Área</option>
+                        <option value="51">Administração</option>
+                        <option value="52">Agricultura, Pecuária, Veterinária</option>
+                        <option value="92">Alimentação / Gastronomia</option>
+                        <option value="55">Arquitetura, Decoração, Design</option>
+                        <option value="56">Artes</option>
+                        <option value="57">Auditoria</option>
+                        <option value="58">Ciências, Pesquisa </option>
+                        <option value="59">Comercial, Vendas</option>
+                        <option value="60">Comércio Exterior, Importação, Exportação</option>
+                        <option value="62">Compras</option>
+                        <option value="63">Comunicação, TV, Cinema</option>
+                        <option value="64">Construção, Manutenção</option>
+                        <option value="66">Contábil, Finanças, Economia</option>
+                        <option value="67">Cultura, Lazer, Entretenimento</option>
+                        <option value="69">Educação, Ensino, Idiomas </option>
+                        <option value="70">Engenharia</option>
+                        <option value="71">Estética</option>
+                        <option value="72">Hotelaria, Turismo</option>
+                        <option value="73">Industrial, Produção, Fábrica</option>
+                        <option value="74">Informática, TI, Telecomunicações</option>
+                        <option value="75">Jurídica</option>
+                        <option value="54">Logística</option>
+                        <option value="77">Marketing</option>
+                        <option value="78">Meio Ambiente, Ecologia</option>
+                        <option value="93">Moda</option>
+                        <option value="79">Qualidade </option>
+                        <option value="80">Química, Petroquímica</option>
+                        <option value="81">Recursos Humanos</option>
+                        <option value="82">Saúde</option>
+                        <option value="83">Segurança</option>
+                        <option value="76">Serviços Gerais</option>
+                        <option value="85">Serviço Social e Comunitário</option>
+                        <option value="86">Telemarketing</option>
+                        <option value="87">Transportes</option>
+                    </select>
+                </div>
+                <div class="empr">
+                    <div>
+                        <label for="datainic">Inicio</label>
+                        <input type="date" name="datainic" id="datainic">
+                    </div>
+                    <div>
+                        <label for="datafim">Termino</label>
+                        <input type="date" name="datafim" id="datafim">
+                    </div>
+                    <div>
+                        <label for="empregado">Estou Empregado</label>
+                        <input type="checkbox" name="empregado" id="empregado">
+                    </div>
+                </div>
+                <div class="local">
+                    <select name="pais" id="pais">
+                        <option value="">País onde estudou</option>
+                        <option value="124">Afeganistão</option>
+                        <option value="56">África do Sul</option>
+                        <option value="15">Albânia</option>
+                        <option value="27">Alemanha</option>
+                        <option value="32">Andorra</option>
+                        <option value="63">Angola</option>
+                        <option value="70">Antígua e Barbuda</option>
+                        <option value="125">Arábia Saudita</option>
+                        <option value="126">Argélia</option>
+                        <option value="4">Argentina</option>
+                        <option value="5">Armênia</option>
+                        <option value="6">Austrália</option>
+                        <option value="7">Áustria</option>
+                        <option value="127">Azerbaijão</option>
+                        <option value="8">Bahamas</option>
+                        <option value="128">Bangladesh</option>
+                        <option value="88">Barbados</option>
+                        <option value="129">Barein</option>
+                        <option value="10">Belarus</option>
+                        <option value="9">Bélgica</option>
+                        <option value="111">Belize</option>
+                        <option value="130">Benin</option>
+                        <option value="106">Bolívia</option>
+                        <option value="11">Bósnia Herzegovina</option>
+                        <option value="201">Botswana</option>
+                        <option selected="selected" value="12">Brasil</option>
+                        <option value="131">Brunei</option>
+                        <option value="13">Bulgária</option>
+                        <option value="132">Burkina Faso</option>
+                        <option value="133">Burundi</option>
+                        <option value="134">Butão</option>
+                        <option value="82">Cabo verde</option>
+                        <option value="14">Camarões</option>
+                        <option value="135">Camboja</option>
+                        <option value="1">Canadá</option>
+                        <option value="109">Caribe</option>
+                        <option value="136">Catar</option>
+                        <option value="36">Cazaquistão</option>
+                        <option value="137">Chade</option>
+                        <option value="107">Chile</option>
+                        <option value="121">China</option>
+                        <option value="18">Chipre</option>
+                        <option value="93">Colômbia</option>
+                        <option value="138">Comores</option>
+                        <option value="92">Congo</option>
+                        <option value="139">Coreia do Norte</option>
+                        <option value="123">Coreia do Sul</option>
+                        <option value="140">Costa do Marfim</option>
+                        <option value="78">Costa Rica</option>
+                        <option value="16">Croácia</option>
+                        <option value="17">Cuba</option>
+                        <option value="20">Dinamarca</option>
+                        <option value="141">Djibuti</option>
+                        <option value="142">Dominica</option>
+                        <option value="22">Egito</option>
+                        <option value="110">El Salvador</option>
+                        <option value="143">Emirados Árabes Unidos</option>
+                        <option value="108">Equador</option>
+                        <option value="144">Eritreia</option>
+                        <option value="54">Eslováquia</option>
+                        <option value="55">Eslovênia</option>
+                        <option value="57">Espanha</option>
+                        <option value="3">Estados Unidos</option>
+                        <option value="24">Estônia</option>
+                        <option value="145">Etiópia</option>
+                        <option value="200">Federação dos Estados da Micronésia</option>
+                        <option value="146">Fiji</option>
+                        <option value="47">Filipinas</option>
+                        <option value="25">Finlândia</option>
+                        <option value="26">Francia</option>
+                        <option value="147">Gabão</option>
+                        <option value="77">Gâmbia</option>
+                        <option value="148">Gana</option>
+                        <option value="149">Geórgia</option>
+                        <option value="150">Granada</option>
+                        <option value="28">Grécia</option>
+                        <option value="105">Guatemala</option>
+                        <option value="112">Guiana</option>
+                        <option value="113">Guiana francesa</option>
+                        <option value="122">Guinea Equatorial</option>
+                        <option value="151">Guiné-Bissau</option>
+                        <option value="152">Haiti</option>
+                        <option value="44">Holanda</option>
+                        <option value="114">Honduras</option>
+                        <option value="29">Hungria</option>
+                        <option value="153">Iemen</option>
+                        <option value="75">Ilhas Marshall</option>
+                        <option value="91">Ilhas Salomão</option>
+                        <option value="72">Índia</option>
+                        <option value="154">Indonésia</option>
+                        <option value="155">Irã</option>
+                        <option value="156">Iraque</option>
+                        <option value="31">Irlanda</option>
+                        <option value="30">Islândia</option>
+                        <option value="2">Israel</option>
+                        <option value="33">Itália</option>
+                        <option value="34">Jamaica</option>
+                        <option value="35">Japão</option>
+                        <option value="73">Jordânia</option>
+                        <option value="157">Kiribati</option>
+                        <option value="158">Kuwait</option>
+                        <option value="71">Kyrgyzstan</option>
+                        <option value="94">Laos</option>
+                        <option value="37">Latvia</option>
+                        <option value="67">Líbano</option>
+                        <option value="74">Libéria</option>
+                        <option value="159">Líbia</option>
+                        <option value="160">Liechtenstein</option>
+                        <option value="38">Lituânia</option>
+                        <option value="39">Luxemburgo</option>
+                        <option value="102">Malásia</option>
+                        <option value="161">Malawi</option>
+                        <option value="162">Maldivas</option>
+                        <option value="40">Mali</option>
+                        <option value="41">Malta</option>
+                        <option value="120">Marrocos</option>
+                        <option value="163">Maurício</option>
+                        <option value="164">Mauritânia</option>
+                        <option value="42">México</option>
+                        <option value="165">Mianmar</option>
+                        <option value="166">Moçambique</option>
+                        <option value="43">Moldova</option>
+                        <option value="167">Mongólia</option>
+                        <option value="168">Montenegro</option>
+                        <option value="169">Namíbia</option>
+                        <option value="170">Nauru</option>
+                        <option value="171">Nepal</option>
+                        <option value="115">Nicarágua</option>
+                        <option value="172">Níger</option>
+                        <option value="45">Nigéria</option>
+                        <option value="46">Noruega</option>
+                        <option value="85">Nova Zelândia</option>
+                        <option value="173">Omã</option>
+                        <option value="87">Palau</option>
+                        <option value="69">Panamá</option>
+                        <option value="174">Papua Nova Guiné</option>
+                        <option value="175">Paquistão</option>
+                        <option value="116">Paraguai</option>
+                        <option value="83">Peru</option>
+                        <option value="48">Polônia</option>
+                        <option value="50">Porto Rico</option>
+                        <option value="49">Portugal</option>
+                        <option value="97">Principado de Mônaco</option>
+                        <option value="89">Quênia</option>
+                        <option value="176">Quirguistão</option>
+                        <option value="101">Reino Unido</option>
+                        <option value="177">República Centro Africana</option>
+                        <option value="19">República Checa</option>
+                        <option value="178">República Democrática do Congo</option>
+                        <option value="21">República Dominicana</option>
+                        <option value="51">Romênia</option>
+                        <option value="179">Ruanda</option>
+                        <option value="52">Rússia</option>
+                        <option value="84">Samoa</option>
+                        <option value="180">San Marino</option>
+                        <option value="98">Santa Lúcia</option>
+                        <option value="181">São Cristóvão e Névis</option>
+                        <option value="182">São Tomé e Príncipe</option>
+                        <option value="76">São Vicente</option>
+                        <option value="68">Senegal</option>
+                        <option value="80">Serra Leoa</option>
+                        <option value="183">Sérvia</option>
+                        <option value="184">Seychelles</option>
+                        <option value="103">Singapura</option>
+                        <option value="185">Síria</option>
+                        <option value="96">Somália</option>
+                        <option value="95">Sri Lanka</option>
+                        <option value="186">Suazilândia</option>
+                        <option value="86">Sudão</option>
+                        <option value="187">Sudão do Sul</option>
+                        <option value="58">Suécia</option>
+                        <option value="59">Suíça</option>
+                        <option value="117">Suriname</option>
+                        <option value="188">Tailândia</option>
+                        <option value="189">Tajidquistão</option>
+                        <option value="190">Tanzânia</option>
+                        <option value="191">Timor Leste</option>
+                        <option value="192">Togo</option>
+                        <option value="193">Tonga</option>
+                        <option value="79">Trinidad Tobago</option>
+                        <option value="119">Tunísia</option>
+                        <option value="194">Turcomenistão</option>
+                        <option value="60">Turquia</option>
+                        <option value="195">Tuvalu</option>
+                        <option value="61">Ucrânia</option>
+                        <option value="81">Uganda</option>
+                        <option value="66">União da Sérvia e Montenegro</option>
+                        <option value="62">Uruguai</option>
+                        <option value="196">Uzbequistão</option>
+                        <option value="197">Vanuatu</option>
+                        <option value="64">Venezuela</option>
+                        <option value="198">Vietnã</option>
+                        <option value="90">Zâmbia</option>
+                        <option value="199">Zimbábue</option>
+                    </select> 
+                    <select name="estado" id="estado" >
+                        <option value="">Estado</option><option value="64">São Paulo</option><option value="182">Rio de Janeiro</option><option value="165">Acre</option><option value="166">Alagoas</option><option value="167">Amapá</option><option value="168">Amazonas</option><option value="169">Bahia</option><option value="170">Ceará</option><option value="171">Distrito Federal</option><option value="172">Espírito Santo</option><option value="190">Goiás</option><option value="173">Maranhão</option><option value="174">Mato Grosso</option><option value="175">Mato Grosso do Sul</option><option value="176">Minas Gerais</option><option value="177">Pará</option><option value="178">Paraíba</option><option value="179">Paraná</option><option value="180">Pernambuco</option><option value="181">Piauí</option><option value="183">Rio Grande do Norte</option><option value="184">Rio Grande do Sul</option><option value="185">Rondônia</option><option value="186">Roraima</option><option value="187">Santa Catarina</option><option value="188">Sergipe</option><option value="189">Tocantins</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="button">
+                        <label for="epcheck"><p>Feito</p></label>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </form>
+
+    <form action="base.html" method="post" class="formulario">
+        <input type="checkbox" name="caixinha" class="caixinha" id="checkci">
+        <div class="trigger-wrapperci">
+            <label for="checkci"><p>Conhecimentos em Informática</p></label>
+            <div class="divci">
+                <div class="divcisec">
+                    <input type="checkbox" name="caixinha" class="caixinha" id="checkbd">
+                    <div class="trigger-bd">
+                        <label for="checkbd"><p>Banco de Dados</p></label>
+                        <div class="bd">
+                            <ul>
+                                <li><input id="bd0" type="checkbox" name="bd0"><label for="bd0">Caché</label></li>
+                                <li><input id="bd1" type="checkbox" name="bd1"><label for="bd1">DB2</label></li>
+                                <li><input id="bd2" type="checkbox" name="bd2"><label for="bd2">Firebird</label></li>
+                                <li><input id="bd3" type="checkbox" name="bd3"><label for="bd3">Informix</label></li>
+                                <li><input id="bd" type="checkbox" name="bd4"><label for="bd4">Interbase</label></li>
+                                <li><input id="bd5" type="checkbox" name="bd5"><label for="bd5">Oracle</label></li>
+                                <li><input id="bd6" type="checkbox" name="bd6"><label for="bd6">PostgreSQL</label></li>
+                                <li><input id="bd7" type="checkbox" name="bd7"><label for="bd7">SQL Server</label></li>
+                                <li><input id="bd8" type="checkbox" name="bd8"><label for="bd8">Sybase</label></li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <input type="checkbox" name="caixinha" class="caixinha" id="checkprog">
+                    <div class="trigger-prog">
+                        <label for="checkprog"><p>Programação</p></label>
+                        <div class="prog">
+                            <ul>
+                                <li><input id="pr0" type="checkbox" name="pr0"><label for="pr0">ASP</label></li>
+                                <li><input id="pr1" type="checkbox" name="pr1"><label for="pr1">ASP.Net</label></li>
+                                <li><input id="pr2" type="checkbox" name="pr2"><label for="pr2">C</label></li>
+                                <li><input id="pr3" type="checkbox" name="pr3"><label for="pr3">C#</label></li>
+                                <li><input id="pr4" type="checkbox" name="pr4"><label for="pr4">C+</label></li>
+                                <li><input id="pr5" type="checkbox" name="pr5"><label for="pr5">C++</label></li>
+                                <li><input id="pr6" type="checkbox" name="pr6"><label for="pr6">COBOL</label></li>
+                                <li><input id="pr7" type="checkbox" name="pr7"><label for="pr7">CSS</label></li>
+                                <li><input id="pr8" type="checkbox" name="pr8"><label for="pr8">Cuda extensions</label></li>
+                                <li><input id="pr9" type="checkbox" name="pr9"><label for="pr9">Dot Net</label></li>
+                                <li><input id="pr10" type="checkbox" name="pr10"><label for="pr10">Erlang</label></li>
+                                <li><input id="pr11" type="checkbox" name="pr11"><label for="pr11">HTML</label></li>
+                                <li><input id="pr12" type="checkbox" name="pr12"><label for="pr12">Java</label></li>
+                                <li><input id="pr13" type="checkbox" name="pr13"><label for="pr13">JavaScript</label></li>
+                                <li><input id="pr14" type="checkbox" name="pr14"><label for="pr14">jQuery</label></li>
+                                <li><input id="pr15" type="checkbox" name="pr15"><label for="pr15">MATLAB</label></li>
+                                <li><input id="pr16" type="checkbox" name="pr16"><label for="pr16">PHP</label></li>
+                                <li><input id="pr17" type="checkbox" name="pr17"><label for="pr17">Python</label></li>
+                                <li><input id="pr18" type="checkbox" name="pr18"><label for="pr18">R</label></li>
+                                <li><input id="pr19" type="checkbox" name="pr19"><label for="pr19">Ruby</label></li>
+                                <li><input id="pr20" type="checkbox" name="pr20"><label for="pr20">VB.Net</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input type="checkbox" name="caixinha" class="caixinha" id="checkgw">
+                    <div class="trigger-gw">
+                        <label for="checkgw"><p>Graficos/Web</p></label>
+                        <div class="gw">
+                            <ul>
+                                <li><input id="gw0" type="checkbox" name="gw0"><label for="gw0">3ds Max</label></li>
+                                <li><input id="gw1" type="checkbox" name="gw1"><label for="gw1">Adobe Ilustrator</label></li>
+                                <li><input id="gw2" type="checkbox" name="gw2"><label for="gw2">Adobe Photoshop</label></li>
+                                <li><input id="gw3" type="checkbox" name="gw3"><label for="gw3">Blender</label></li>
+                                <li><input id="gw4" type="checkbox" name="gw4"><label for="gw4">CorelDraw </label></li>
+                                <li><input id="gw5" type="checkbox" name="gw5"><label for="gw5">Expression Web</label></li>
+                                <li><input id="gw6" type="checkbox" name="gw6"><label for="gw6">GIMP</label></li>
+                                <li><input id="gw7" type="checkbox" name="gw7"><label for="gw7">Inkscape</label></li>
+                                <li><input id="gw8" type="checkbox" name="gw8"><label for="gw8">Macromedia Dreamweaver</label></li>
+                                <li><input id="gw9" type="checkbox" name="gw9"><label for="gw9">Macromedia Fireworks</label></li>
+                                <li><input id="gw10" type="checkbox" name="gw10"><label for="gw10">Macromedia Flash</label></li>
+                                <li><input id="gw11" type="checkbox" name="gw11"><label for="gw11">Macromedia Freehand</label></li>
+                                <li><input id="gw12" type="checkbox" name="gw12"><label for="gw12">Paint Shop Pro</label></li>
+                                <li><input id="gw13" type="checkbox" name="gw13"><label for="gw13">Pixia</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divcisec"> 
+                    <input type="checkbox" name="caixinha" class="caixinha" id="checkae">
+                    <div class="trigger-ae">
+                        <label for="checkae"><p>Aplicações de Escritorio</p></label>
+                        <div class="ae">            
+                            <ul>                
+                                <li><input id="ae0" type="checkbox" name="ae0"><label for="ae0">LibreOffice</label></li>
+                                <li><input id="ae1" type="checkbox" name="ae1"><label for="ae1">Lotus Notes</label></li>
+                                <li><input id="ae2" type="checkbox" name="ae2"><label for="ae2">Microsoft Access</label></li>
+                                <li><input id="ae3" type="checkbox" name="ae3"><label for="ae3">Microsoft Excel</label></li>
+                                <li><input id="ae4" type="checkbox" name="ae4"><label for="ae4">Microsoft Outlook</label></li>
+                                <li><input id="ae5" type="checkbox" name="ae5"><label for="ae5">Microsoft PowerPoint</label></li>
+                                <li><input id="ae6" type="checkbox" name="ae6"><label for="ae6">Microsoft Word</label></li>
+                                <li><input id="ae7" type="checkbox" name="ae7"><label for="ae7">Open Office</label></li>
+                                <li><input id="ae8" type="checkbox" name="ae8"><label for="ae8">StarOffice</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input type="checkbox" name="caixinha" class="caixinha" id="checkso">
+                    <div class="trigger-so">
+                        <label for="checkso"><p>Sistemas Operacionais</p></label>
+                        <div class="so"> 
+                            <ul>
+                                <li><input id="so0" type="checkbox" name="so0"><label for="so0">FreeBSD</label></li>
+                                <li><input id="so1" type="checkbox" name="so1"><label for="so1">IBM OS</label></li>
+                                <li><input id="so2" type="checkbox" name="so2"><label for="so2">JavaOS</label></li>
+                                <li><input id="so3" type="checkbox" name="so3"><label for="so3">Linux</label></li>
+                                <li><input id="so4" type="checkbox" name="so4"><label for="so4">Mac OS</label></li>
+                                <li><input id="so5" type="checkbox" name="so5"><label for="so5">NetBSD</label></li>
+                                <li><input id="so6" type="checkbox" name="so6"><label for="so6">NT 4.0</label></li>
+                                <li><input id="so7" type="checkbox" name="so7"><label for="so7">Solaris</label></li>
+                                <li><input id="so8" type="checkbox" name="so8"><label for="so8">UNIX</label></li>
+                                <li><input id="so9" type="checkbox" name="so9"><label for="so9">VMS</label></li>
+                                <li><input id="so10" type="checkbox" name="so10"><label for="so10">Windows</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input type="checkbox" name="caixinha" class="caixinha" id="checkop">
+                    <div class="trigger-op">
+                        <label for="checkop"><p>Outros Programas</p></label>
+                        <div class="op">   
+                            <ul>
+                                <li><input id="op0" type="checkbox" name="op0"><label for="op0">AutoCAD</label></li>
+                                <li><input id="op1" type="checkbox" name="op1"><label for="op1">CRM</label></li>
+                                <li><input id="op2" type="checkbox" name="op2"><label for="op2">Edição de Som</label></li>
+                                <li><input id="op3" type="checkbox" name="op3"><label for="op3">Edição de Video</label></li>
+                                <li><input id="op4" type="checkbox" name="op4"><label for="op4">ERP</label></li>
+                                <li><input id="op5" type="checkbox" name="op5"><label for="op5">Microsoft Project</label></li>
+                                <li><input id="op6" type="checkbox" name="op6"><label for="op6">SAP</label></li>
+                                <li><input id="op7" type="checkbox" name="op7"><label for="op7">Selenium</label></li>
+                                <li><input id="op8" type="checkbox" name="op8"><label for="op8">Servidores de E-mail</label></li>
+                                <li><input id="op9" type="checkbox" name="op9"><label for="op9">Servidores Proxy</label></li>
+                                <li><input id="op10" type="checkbox" name="op10"><label for="op10">Servidores Web</label></li>
+                                <li><input id="op11" type="checkbox" name="op11"><label for="op11">Software de Contabilidade</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
+                <button type="button">
+                    <label for="cicheck"><p>Feito</p></label>
+                </button> 
+            </div>
+        </div>
+    </form>
+    
+    <form method="post" action="base.html" class="formulario">
+        <input type="checkbox" name="caixinha" class="caixinha" id="checkh">
+        <div class="trigger-wrapperh">
+            <label for="checkh"><p>Habilidades</p></label>
+            <div class="divh">
+                <input type="checkbox" name="caixinha" class="caixinha" id="checkidi">
+                <div class="trigger-wrapperidi">
+                    <label for="checkidi"><p>Idiomas</p></label>
+                    <div class="dividi">                       
+                        <div>
+                            <select name="idiomas" >
+                                <option value="">Idioma</option>
+                                <option value="1">Afrikaans</option>
+                                <option value="16">Alemão</option>
+                                <option value="2">Árabe</option>
+                                <option value="3">Armeno</option>
+                                <option value="4">Bengalí</option>
+                                <option value="63">Búlgaro</option>
+                                <option value="5">Cantonês</option>
+                                <option value="59">Catalão</option>
+                                <option value="6">Chinês</option>
+                                <option value="27">Coreano</option>
+                                <option value="7">Croato</option>
+                                <option value="9">Dinamarquês</option>
+                                <option value="46">Eslovaco</option>
+                                <option value="47">Espanhol</option>
+                                <option value="12">Farsi</option>
+                                <option value="13">Filipino</option>
+                                <option value="14">Finlandês</option>
+                                <option value="15">Francês</option>
+                                <option value="60">Galego</option>
+                                <option value="17">Grego</option>
+                                <option value="18">Gujarati</option>
+                                <option value="19">Hebraico</option>
+                                <option value="10">Holandês</option>
+                                <option value="21">Húngaro</option>
+                                <option value="20">Índio</option>
+                                <option value="23">Indonésio</option>
+                                <option value="11">Inglês</option>
+                                <option value="22">Islandês</option>
+                                <option value="24">Italiano</option>
+                                <option value="25">Japonês</option>
+                                <option value="26">Kannad</option>
+                                <option value="28">Latin</option>
+                                <option value="29">Latviano</option>
+                                <option value="64">Libras</option>
+                                <option value="30">Lituano</option>
+                                <option value="31">Malaio</option>
+                                <option value="32">Malayalamo</option>
+                                <option value="33">Mandarin</option>
+                                <option value="34">Marathi</option>
+                                <option value="35">Noruego</option>
+                                <option value="36">Polonês</option>
+                                <option value="37">Português</option>
+                                <option value="38">Punjabi</option>
+                                <option value="39">Romano</option>
+                                <option value="40">Russo</option>
+                                <option value="41">Samoano</option>
+                                <option value="42">Sânscrito</option>
+                                <option value="43">Servio-croata</option>
+                                <option value="45">Sinalés</option>
+                                <option value="44">Sindhi</option>
+                                <option value="49">Sueco</option>
+                                <option value="48">Swahili</option>
+                                <option value="50">Tagalog</option>
+                                <option value="51">Taiwanês</option>
+                                <option value="52">Tamil</option>
+                                <option value="8">Tcheco</option>
+                                <option value="53">Telugu</option>
+                                <option value="54">Thai</option>
+                                <option value="55">Turco</option>
+                                <option value="57">Ucraniano</option>
+                                <option value="56">Urdu</option>
+                                <option value="62">Valenciano</option>
+                                <option value="61">Vasco</option>
+                                <option value="58">Vietnamita</option>
+                            </select>
+                            <select name="nivelidi" >
+                                <option selected="selected" value="">Nível</option>
+                                <option value="4">Básico</option>
+                                <option value="3">Intermediário</option>
+                                <option value="2">Avançado</option>
+                                <option value="1">Nativo</option>
+                            
+                            </select>
+                        </div>
+                        <div>
+                            <select name="idiomas">
+                                <option value="">Idioma</option>
+                                <option value="1">Afrikaans</option>
+                                <option value="16">Alemão</option>
+                                <option value="2">Árabe</option>
+                                <option value="3">Armeno</option>
+                                <option value="4">Bengalí</option>
+                                <option value="63">Búlgaro</option>
+                                <option value="5">Cantonês</option>
+                                <option value="59">Catalão</option>
+                                <option value="6">Chinês</option>
+                                <option value="27">Coreano</option>
+                                <option value="7">Croato</option>
+                                <option value="9">Dinamarquês</option>
+                                <option value="46">Eslovaco</option>
+                                <option value="47">Espanhol</option>
+                                <option value="12">Farsi</option>
+                                <option value="13">Filipino</option>
+                                <option value="14">Finlandês</option>
+                                <option value="15">Francês</option>
+                                <option value="60">Galego</option>
+                                <option value="17">Grego</option>
+                                <option value="18">Gujarati</option>
+                                <option value="19">Hebraico</option>
+                                <option value="10">Holandês</option>
+                                <option value="21">Húngaro</option>
+                                <option value="20">Índio</option>
+                                <option value="23">Indonésio</option>
+                                <option value="11">Inglês</option>
+                                <option value="22">Islandês</option>
+                                <option value="24">Italiano</option>
+                                <option value="25">Japonês</option>
+                                <option value="26">Kannad</option>
+                                <option value="28">Latin</option>
+                                <option value="29">Latviano</option>
+                                <option value="64">Libras</option>
+                                <option value="30">Lituano</option>
+                                <option value="31">Malaio</option>
+                                <option value="32">Malayalamo</option>
+                                <option value="33">Mandarin</option>
+                                <option value="34">Marathi</option>
+                                <option value="35">Noruego</option>
+                                <option value="36">Polonês</option>
+                                <option value="37">Português</option>
+                                <option value="38">Punjabi</option>
+                                <option value="39">Romano</option>
+                                <option value="40">Russo</option>
+                                <option value="41">Samoano</option>
+                                <option value="42">Sânscrito</option>
+                                <option value="43">Servio-croata</option>
+                                <option value="45">Sinalés</option>
+                                <option value="44">Sindhi</option>
+                                <option value="49">Sueco</option>
+                                <option value="48">Swahili</option>
+                                <option value="50">Tagalog</option>
+                                <option value="51">Taiwanês</option>
+                                <option value="52">Tamil</option>
+                                <option value="8">Tcheco</option>
+                                <option value="53">Telugu</option>
+                                <option value="54">Thai</option>
+                                <option value="55">Turco</option>
+                                <option value="57">Ucraniano</option>
+                                <option value="56">Urdu</option>
+                                <option value="62">Valenciano</option>
+                                <option value="61">Vasco</option>
+                                <option value="58">Vietnamita</option>
+                            </select>
+                            <select name="nivelidi">
+                                <option selected="selected" value="">Nível</option>
+                                <option value="4">Básico</option>
+                                <option value="3">Intermediário</option>
+                                <option value="2">Avançado</option>
+                                <option value="1">Nativo</option>
+                            
+                            </select>
+                        </div>
+                        <div>
+                            <select name="idiomas">
+                                <option value="">Idioma</option>
+                                <option value="1">Afrikaans</option>
+                                <option value="16">Alemão</option>
+                                <option value="2">Árabe</option>
+                                <option value="3">Armeno</option>
+                                <option value="4">Bengalí</option>
+                                <option value="63">Búlgaro</option>
+                                <option value="5">Cantonês</option>
+                                <option value="59">Catalão</option>
+                                <option value="6">Chinês</option>
+                                <option value="27">Coreano</option>
+                                <option value="7">Croato</option>
+                                <option value="9">Dinamarquês</option>
+                                <option value="46">Eslovaco</option>
+                                <option value="47">Espanhol</option>
+                                <option value="12">Farsi</option>
+                                <option value="13">Filipino</option>
+                                <option value="14">Finlandês</option>
+                                <option value="15">Francês</option>
+                                <option value="60">Galego</option>
+                                <option value="17">Grego</option>
+                                <option value="18">Gujarati</option>
+                                <option value="19">Hebraico</option>
+                                <option value="10">Holandês</option>
+                                <option value="21">Húngaro</option>
+                                <option value="20">Índio</option>
+                                <option value="23">Indonésio</option>
+                                <option value="11">Inglês</option>
+                                <option value="22">Islandês</option>
+                                <option value="24">Italiano</option>
+                                <option value="25">Japonês</option>
+                                <option value="26">Kannad</option>
+                                <option value="28">Latin</option>
+                                <option value="29">Latviano</option>
+                                <option value="64">Libras</option>
+                                <option value="30">Lituano</option>
+                                <option value="31">Malaio</option>
+                                <option value="32">Malayalamo</option>
+                                <option value="33">Mandarin</option>
+                                <option value="34">Marathi</option>
+                                <option value="35">Noruego</option>
+                                <option value="36">Polonês</option>
+                                <option value="37">Português</option>
+                                <option value="38">Punjabi</option>
+                                <option value="39">Romano</option>
+                                <option value="40">Russo</option>
+                                <option value="41">Samoano</option>
+                                <option value="42">Sânscrito</option>
+                                <option value="43">Servio-croata</option>
+                                <option value="45">Sinalés</option>
+                                <option value="44">Sindhi</option>
+                                <option value="49">Sueco</option>
+                                <option value="48">Swahili</option>
+                                <option value="50">Tagalog</option>
+                                <option value="51">Taiwanês</option>
+                                <option value="52">Tamil</option>
+                                <option value="8">Tcheco</option>
+                                <option value="53">Telugu</option>
+                                <option value="54">Thai</option>
+                                <option value="55">Turco</option>
+                                <option value="57">Ucraniano</option>
+                                <option value="56">Urdu</option>
+                                <option value="62">Valenciano</option>
+                                <option value="61">Vasco</option>
+                                <option value="58">Vietnamita</option>
+                            </select>
+                            <select name="nivelidi">
+                                <option selected="selected" value="">Nível</option>
+                                <option value="4">Básico</option>
+                                <option value="3">Intermediário</option>
+                                <option value="2">Avançado</option>
+                                <option value="1">Nativo</option>
+                            
+                            </select>
+                        </div>
+                        <div>
+                            <select name="idiomas">
+                                <option value="">Idioma</option>
+                                <option value="1">Afrikaans</option>
+                                <option value="16">Alemão</option>
+                                <option value="2">Árabe</option>
+                                <option value="3">Armeno</option>
+                                <option value="4">Bengalí</option>
+                                <option value="63">Búlgaro</option>
+                                <option value="5">Cantonês</option>
+                                <option value="59">Catalão</option>
+                                <option value="6">Chinês</option>
+                                <option value="27">Coreano</option>
+                                <option value="7">Croato</option>
+                                <option value="9">Dinamarquês</option>
+                                <option value="46">Eslovaco</option>
+                                <option value="47">Espanhol</option>
+                                <option value="12">Farsi</option>
+                                <option value="13">Filipino</option>
+                                <option value="14">Finlandês</option>
+                                <option value="15">Francês</option>
+                                <option value="60">Galego</option>
+                                <option value="17">Grego</option>
+                                <option value="18">Gujarati</option>
+                                <option value="19">Hebraico</option>
+                                <option value="10">Holandês</option>
+                                <option value="21">Húngaro</option>
+                                <option value="20">Índio</option>
+                                <option value="23">Indonésio</option>
+                                <option value="11">Inglês</option>
+                                <option value="22">Islandês</option>
+                                <option value="24">Italiano</option>
+                                <option value="25">Japonês</option>
+                                <option value="26">Kannad</option>
+                                <option value="28">Latin</option>
+                                <option value="29">Latviano</option>
+                                <option value="64">Libras</option>
+                                <option value="30">Lituano</option>
+                                <option value="31">Malaio</option>
+                                <option value="32">Malayalamo</option>
+                                <option value="33">Mandarin</option>
+                                <option value="34">Marathi</option>
+                                <option value="35">Noruego</option>
+                                <option value="36">Polonês</option>
+                                <option value="37">Português</option>
+                                <option value="38">Punjabi</option>
+                                <option value="39">Romano</option>
+                                <option value="40">Russo</option>
+                                <option value="41">Samoano</option>
+                                <option value="42">Sânscrito</option>
+                                <option value="43">Servio-croata</option>
+                                <option value="45">Sinalés</option>
+                                <option value="44">Sindhi</option>
+                                <option value="49">Sueco</option>
+                                <option value="48">Swahili</option>
+                                <option value="50">Tagalog</option>
+                                <option value="51">Taiwanês</option>
+                                <option value="52">Tamil</option>
+                                <option value="8">Tcheco</option>
+                                <option value="53">Telugu</option>
+                                <option value="54">Thai</option>
+                                <option value="55">Turco</option>
+                                <option value="57">Ucraniano</option>
+                                <option value="56">Urdu</option>
+                                <option value="62">Valenciano</option>
+                                <option value="61">Vasco</option>
+                                <option value="58">Vietnamita</option>
+                            </select>
+                            <select name="nivelidi">
+                                <option selected="selected" value="">Nível</option>
+                                <option value="4">Básico</option>
+                                <option value="3">Intermediário</option>
+                                <option value="2">Avançado</option>
+                                <option value="1">Nativo</option>
+                            
+                            </select>
+                        </div>                        
+                    </div>
+                </div>
+                <input type="checkbox" name="caixinha" class="caixinha" id="checkss">
+                <div class="trigger-wrapperss">
+                    <label for="checkss"><p>Soft Skills</p></label>
+                    <div class="divss">
+                        <label for="txtss">Insira aqui suas habilidades:</label>
+                        <textarea name="txtss" id="txtss" cols="100" rows="10" placeholder="Princípios éticos; Confiança; Atitude positiva;Motivação; Trabalho em equipe; Organização e gestão do tempo; Capacidade de trabalhar sob pressão; Comunicação; Flexibilidade; Segurança" required class="txt"></textarea>
+                    </div>
+                </div>  
+                <button type="button">
+                    <label for="hcheck"><p>Feito</p></label>
+                </button>  
+            </div>
+        </div>
+    </form>
+
+    <form method="post" action="base.html" class="formulario">
+        <input type="checkbox" name="caixinha" class="caixinha" id="checkic">
+        <div class="trigger-wrapperic">
+            <label for="checkic"><p>Informações Complementares</p></label>
+            <div class="divic">
+                <ul>
+                    <li>                  
+                        <div>Tipo de habilitação para dirigir?</div>
+                        <ul>
+                            <li><input id="h0" type="checkbox" name="h0"><label for="h0">A</label></li>
+                            <li><input id="h1" type="checkbox" name="h1"><label for="h1">B</label></li>
+                            <li><input id="h2" type="checkbox" name="h2"><label for="h2">C</label></li>
+                            <li><input id="h3" type="checkbox" name="h3"><label for="h3">D</label></li>
+                            <li><input id="h4" type="checkbox" name="h4"><label for="h4">E</label></li>
+                        </ul>                  
+                    </li>
+                    <li>
+                        <div>Possui veículo próprio? Qual?</div>
+                        <ul>
+                            <li><input id="v0" type="checkbox" name="v0"><label for="v0">Caminhão</label></li>
+                            <li><input id="v1" type="checkbox" name="v1"><label for="v1">Carro particular</label></li>
+                            <li><input id="v2" type="checkbox" name="v2"><label for="v2">Moto</label></li>
+                            <li><input id="v3" type="checkbox" name="v3"><label for="v3">Outro</label></li>              
+                        </ul>
+                    </li>
+                    <div>
+                        <li>
+                            <div>Tem disponibilidade para viajar?</div>
+                            <ul>
+                                <li><input id="dv0" type="radio" name="dvl" value="dv1"><label for="dv0">Sim</label></li>
+                                <li><input id="dv1" type="radio" name="dvl" value="dv0"><label for="dv1">Não</label></li>                       
+                            </ul>
+                        </li>
+                        <li>                    
+                            <div>Tem disponibilidade para mudar de residência?</div>
+                            <ul>
+                                <li><input id="dm0" type="radio" name="dm1" value="dm1"><label for="dm0">Sim</label></li>
+                                <li><input id="dm1" type="radio" name="dm1" value="dm0"><label for="dm1">Não</label></li>                    
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+                <button type="button">
+                    <label for="iccheck"><p>Feito</p></label>
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <form method="post" action="base.html" class="formulario">
+        <input type="checkbox" name="caixinha" class="caixinha" id="checkopr">
+        <div class="trigger-wrapperopr">
+            <label for="checkopr"><p>Objetivos Profissionais</p></label>
+            <div class="divopr">
+                <div>
+                    <select name="jornada">
+                        <option value="">Jornada</option>
+                        <option value="">Noturno</option>
+                        <option value="">Parcial manhãs</option>
+                        <option value="">Parcial noites</option>
+                        <option value="">Parcial tardes</option>
+                        <option value="">Período Integral</option>
+                    </select>
+                    <select name="tpcontrato">
+                        <option value="">Tipo de contrato</option>
+                        <option value="">Autônomo</option>
+                        <option value="">Cooperado</option>
+                        <option value="">Efetivo – CLT</option>
+                        <option value="">Estágio</option>
+                        <option value="">Jovem Aprendiz</option>
+                        <option value="">Outros</option>
+                        <option value="">Prestador de Serviços (PJ)</option>
+                        <option value="">Temporário</option>
+                        <option value="">Trainee</option>                   
+                    </select>
+                </div>
+                <div>
+                    <select name="nvhi">
+                        <option value="">Nível hierárquico mínimo</option>
+                        <option value="">Estagiário</option>
+                        <option value="">Operacional</option>
+                        <option value="">Auxiliar</option>
+                        <option value="">Assistente</option>
+                        <option value="">Trainee</option>
+                        <option value="">Analista</option>
+                        <option value="">Encarregado</option>
+                        <option value="">Supervisor</option>
+                        <option value="">Consultor</option>
+                        <option value="">Especialista</option>
+                        <option value="">Coordenador</option>
+                        <option value="">Gerente</option>
+                        <option value="">Diretor</option>                    
+                    </select>
+                    <select name="nvhimax">
+                        <option value="">Nível hierárquico máximo</option>
+                        <option value="">Estagiário</option>
+                        <option value="">Operacional</option>
+                        <option value="">Auxiliar</option>
+                        <option value="">Assistente</option>
+                        <option value="">Trainee</option>
+                        <option value="">Analista</option>
+                        <option value="">Encarregado</option>
+                        <option value="">Supervisor</option>
+                        <option value="">Consultor</option>
+                        <option value="">Especialista</option>
+                        <option value="">Coordenador</option>
+                        <option value="">Gerente</option>
+                        <option value="">Diretor</option>                   
+                    </select>
+                </div>                
+                <div class="pret">Indique sua pretensão salarial para enviarmos vagas de acordo com a preferência.</div>
+                <div class="sal">
+                    <input name="salmin" type="text" maxlength="5" placeholder="inicial"> 
+                    <p>,00</p> 
+                    <input name="salmax" type="text" maxlength="5" placeholder="final">
+                    <p>,00</p>
+                </div>
+                <button type="button">
+                    <label for="opcheck"><p>Feito</p></label>
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <form method="post" action="base.html" class="formulario">
+        <input type="checkbox" name="caixinha" class="caixinha" id="checkr">
+        <div class="trigger-wrapperr">
+            <label for="checkr"><p>Recomendações Profissionais e de Estudos</p></label>
+            <div class="divr">
+                <div>
+                    <label for="recomendacao">Envie sua Carta de Recomendação</label>
+                </div>
+                <div>
+                    <input type="file" name="recomendacao" id="recomendacao">
+                </div>
+                <div>
+                    <button type="submit">
+                        <label for="rcheck"><p>Feito</p></label>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</main>
+
+<footer> 
+        <img src="img\logo.png" alt="logotipo">
+        <p>© Genérico Jobs Brasil Atividades de Internet, Ltda.</p>
+        <p> Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
